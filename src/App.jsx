@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import $ from 'jquery';
 import reactLogo from './assets/react.svg'
 import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css'
