@@ -1,3 +1,8 @@
+Navbar{
+  margin: 0;
+  padding: 0;
+}
+
 .navbar-logo{
   cursor: pointer;
 }

@@ -1,15 +1,16 @@
 import React, {Component} from 'react';
+
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 
 import Marketplace from '../../pages/Marketplace';
 import GameZone from '../../pages/GameZone';
+import Dashboard from '../../pages/Dashboard';
 
-import azrielLogo from '../../assets/image/logo/nft.azriel-logo.png'
+import azrielLogo from '../../assets/image/logo/nft.azriel-logo.png';
 
-import './navbar.css'
+import './navbar.css';
 
 class BasicExample extends Component{
   constructor(props){
@@ -37,7 +38,7 @@ class BasicExample extends Component{
     )
     
     if (this.state.servePage == "dashboard"){
-      content = (<p>Dashboard</p>);
+      content = <Dashboard />;
     }else if (this.state.servePage == "marketplace"){
       content = <Marketplace />;
     }else if (this.state.servePage == "gamezone"){

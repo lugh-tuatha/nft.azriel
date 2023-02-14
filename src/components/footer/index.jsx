@@ -1,4 +1,5 @@
 import { useState } from 'react'
+
 import './footer.css'
 
 function Footer() {
