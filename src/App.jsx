@@ -5,6 +5,7 @@ import reactLogo from './assets/svg/react.svg'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Button from 'react-bootstrap/Button';
 import Btn  from './components/button'
+import Cards from './components/cards'
 
 import './App.css'
 
@@ -15,6 +16,7 @@ function App() {
     <div>
       <Navbar />
       <Btn />
+      <Cards />
     </div>
   )
 }

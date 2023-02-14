@@ -4,7 +4,7 @@ import './index.css'
 function Btn() {
   return (
     <div>
-      <button className="btn btn-primary btns">Jommel</button>
+      <button className="btns"><span className="btns-spn"></span>Explore Now</button>
     </div>
   )
 }
