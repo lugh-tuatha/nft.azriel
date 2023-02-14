@@ -12,7 +12,7 @@ import azrielLogo from '../../assets/image/logo/nft.azriel-logo.png';
 
 import './navbar.css';
 
-class BasicExample extends Component{
+class Navigation extends Component{
   constructor(props){
     super(props);
     this.state = {
@@ -32,6 +32,7 @@ class BasicExample extends Component{
               <Nav.Link onClick={() => this.setState({servePage: "marketplace"})}>Marketplace</Nav.Link>
               <Nav.Link onClick={() => this.setState({servePage: "gamezone"})}>Game zone</Nav.Link>
             </Nav>
+
           </Navbar.Collapse>
         </Container>
       </Navbar>
@@ -54,4 +55,4 @@ class BasicExample extends Component{
   
 }
 
-export default BasicExample;
+export default Navigation;
