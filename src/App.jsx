@@ -6,15 +6,15 @@ import reactLogo from './assets/svg/react.svg'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Button from 'react-bootstrap/Button';
 
-import Navbar from './components/navbar';
-import Btn  from './components/button'
+import Btn  from './components/button';
+import Header from './components/header';
 
 import './App.css'
 
 function App() {
   return (
-    <div>
-      <Navbar />
+    <div className='app'>
+      <Header />
       <Btn />
     </div>
   )
