@@ -7,6 +7,9 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Marketplace from '../../pages/Marketplace';
 import GameZone from '../../pages/GameZone';
 
+import azrielLogo from '../../assets/image/logo/nft.azriel-logo.png'
+
+import './navbar.css'
 
 class BasicExample extends Component{
   constructor(props){
@@ -20,7 +23,7 @@ class BasicExample extends Component{
     let nav = (
       <Navbar bg="light" expand="lg">
         <Container>
-          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+          <Navbar.Brand onClick={() => this.setState({servePage: "dashboard"})} className="navbar-logo"><img src={ azrielLogo } alt="Our logo brand" /></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
