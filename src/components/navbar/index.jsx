@@ -4,6 +4,10 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
+import Marketplace from '../../pages/Marketplace';
+import GameZone from '../../pages/GameZone';
+
+
 class BasicExample extends Component{
   constructor(props){
     super(props);
@@ -20,15 +24,9 @@ class BasicExample extends Component{
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="#home">Dashboard</Nav.Link>
-              <Nav.Link href="#link">Marketplace</Nav.Link>
-              <NavDropdown title="Game Zone" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Wheel of fortune</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Black Jack
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Dice</NavDropdown.Item>
-              </NavDropdown>
+              <Nav.Link onClick={() => this.setState({servePage: "dashboard"})}>Dashboard</Nav.Link>
+              <Nav.Link onClick={() => this.setState({servePage: "marketplace"})}>Marketplace</Nav.Link>
+              <Nav.Link onClick={() => this.setState({servePage: "gamezone"})}>Game zone</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -37,10 +35,10 @@ class BasicExample extends Component{
     
     if (this.state.servePage == "dashboard"){
       content = (<p>Dashboard</p>);
-    }else if (this.state.servePage == "gamezone"){
-      content = (<p>Gamezone</p>);
     }else if (this.state.servePage == "marketplace"){
-      content = (<p>Marketplace</p>);
+      content = <Marketplace />;
+    }else if (this.state.servePage == "gamezone"){
+      content = <GameZone />;
     }
     return (
       <div>
