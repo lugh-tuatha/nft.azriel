@@ -4,17 +4,17 @@ import blackJackGame from '../../assets/image/games/blackjack.png'
 
 import Button from '../button'
 
-function GameCards(){
+function GameCards({title, description, image}){
   return (
     <div className='gameCardContainer'>
       <div className="gameDescContainer">
-        <h1>Black Jack game</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, id aut! Maxime. Lorem ipsum dolor sit.</p>
+        <h1>{title}</h1>
+        <p>{description}</p>
         <Button />
       </div>
 
       <div className="gameContainer">
-        <img src={blackJackGame} alt="blackjack game banner" />
+        <img src={image} alt={title} />
       </div>
 
     </div>

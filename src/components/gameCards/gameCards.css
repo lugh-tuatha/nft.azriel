@@ -12,3 +12,7 @@
 .gameContainer > img{
   max-width: 25rem;
 }
+
+.gameDescContainer{
+  max-width: 50%;
+}
