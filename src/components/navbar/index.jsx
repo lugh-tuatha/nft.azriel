@@ -1,18 +1,10 @@
 import React, {Component} from 'react';
-
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
-import Marketplace from '../../pages/Marketplace';
-import GameZone from '../../pages/GameZone';
-import Dashboard from '../../pages/Dashboard';
-
-import azrielLogo from '../../assets/image/logo/nft.azriel-logo.png';
-
-import './navbar.css';
-
-class Navigation extends Component{
+class BasicExample extends Component{
   constructor(props){
     super(props);
     this.state = {
@@ -24,26 +16,31 @@ class Navigation extends Component{
     let nav = (
       <Navbar bg="light" expand="lg">
         <Container>
-          <Navbar.Brand onClick={() => this.setState({servePage: "dashboard"})} className="navbar-logo"><img src={ azrielLogo } alt="Our logo brand" /></Navbar.Brand>
+          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link onClick={() => this.setState({servePage: "dashboard"})}>Dashboard</Nav.Link>
-              <Nav.Link onClick={() => this.setState({servePage: "marketplace"})}>Marketplace</Nav.Link>
-              <Nav.Link onClick={() => this.setState({servePage: "gamezone"})}>Game zone</Nav.Link>
+              <Nav.Link href="#home">Dashboard</Nav.Link>
+              <Nav.Link href="#link">Marketplace</Nav.Link>
+              <NavDropdown title="Game Zone" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action/3.1">Wheel of fortune</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">
+                  Black Jack
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">Dice</NavDropdown.Item>
+              </NavDropdown>
             </Nav>
-
           </Navbar.Collapse>
         </Container>
       </Navbar>
     )
     
     if (this.state.servePage == "dashboard"){
-      content = <Dashboard />;
-    }else if (this.state.servePage == "marketplace"){
-      content = <Marketplace />;
+      content = (<p>Dashboard</p>);
     }else if (this.state.servePage == "gamezone"){
-      content = <GameZone />;
+      content = (<p>Gamezone</p>);
+    }else if (this.state.servePage == "marketplace"){
+      content = (<p>Marketplace</p>);
     }
     return (
       <div>
@@ -55,4 +52,4 @@ class Navigation extends Component{
   
 }
 
-export default Navigation;
+export default BasicExample;
