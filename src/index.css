@@ -1,12 +1,7 @@
 :root {
-  --primary-color: #52b788;
+  --primary-color: #a2d2ff;
   --light-color: #F8F9FA;
   --dark-color: #212529;
-}
-
-*{
-  margin: 0;
-  padding: 0;
 }
 
 a {
@@ -20,5 +15,6 @@ a:hover {
 }
 
 body {
+  margin: 0;
   background-color: var(--light-color);
 }
