@@ -1,0 +1,13 @@
+.featureContainer{
+  width: 95%;
+  height: 18rem;
+  border-radius: 3rem;
+  margin: 0 auto;
+  background-color: rebeccapurple;
+}
+
+.featureContainer > h1{
+  margin: 2rem;
+  padding: 1rem 0 0 0;
+  max-width: 470px;
+}

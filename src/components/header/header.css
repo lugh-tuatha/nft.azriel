@@ -10,8 +10,9 @@
   margin: 10px;
 }
 
-.azrielLogo {
+.logoContainer > img {
   width: 100px;
+  cursor: pointer;
 }
 
 .searchBar{
@@ -47,6 +48,7 @@
 
 .headerItems > p{
   margin: .75rem;
+  cursor: pointer;
 }
 
 .headerActions{
@@ -70,4 +72,20 @@
 
 .themeSwitchContainer > img{
   height: 25px;
+}
+
+.balanceContainer{
+  display: flex;
+  background-color: #1c1c1e;
+  padding: .50rem;
+  border-radius: 2rem;
+}
+
+.balanceContainer > img{
+  width: 1.5rem;
+  margin: 0 .75rem 0 .75rem;
+}
+
+.balanceContainer > p{
+  margin: auto .75rem auto 0;
 }

@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 
-import azrielLogo from '../../assets/image/logo/nft.azriel-logo.png';
+import azrielLogo from '../../assets/image/logo/azriel-logo.png';
 import searchIcon from '../../assets/image/logo/search.png'
 import themeSwitchIcon from '../../assets/image/logo/theme-switch.png'
+import eth from '../../assets/image/logo/eth.png'
 
 import Marketplace from '../../pages/Marketplace';
 import GameZone from '../../pages/GameZone';
@@ -22,7 +23,7 @@ class Header extends Component{
     let nav = (
       <div className='header'>
         <div className="logoContainer">
-          <img src={azrielLogo} alt="brand logo" className='azrielLogo'/>
+          <img src={azrielLogo} alt="brand logo" className='azrielLogo' onClick={() => this.setState({servePage: "dashboard"})}/>
         </div>
 
         <div className="searchBar">
@@ -42,6 +43,15 @@ class Header extends Component{
           <div className="themeSwitchContainer">
             <img src={themeSwitchIcon} alt="" />
           </div>
+        </div>
+        
+        <div className="balanceContainer">
+          <img src={eth} alt="eth logo" />
+          <p>0.515 ETH</p>
+        </div>
+
+        <div>
+          
         </div>
       </div>
     )

@@ -1,10 +1,10 @@
 import '../index.css'
+import Feature from '../components/feature'
 
 export default function Dashboard() {
   return (
     <div>
-      <p>Dashboard</p>
-      <p>dash?</p>
+      <Feature />
     </div>
   )
 }
