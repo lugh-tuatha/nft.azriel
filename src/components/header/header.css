@@ -16,7 +16,7 @@
 }
 
 .searchBar{
-  background-color: #1c1c1e;
+  background-color: var(--bg-dark-color-2);
   height: 50px;
   flex: 1;
   display: flex;
@@ -34,7 +34,7 @@
   border: none;
   width: 100%;
   outline: none;
-  color: #eee;
+  color: var(--text-white);
 }
 
 .searchIconContainer > img{
@@ -62,7 +62,7 @@
 
 .themeSwitchContainer{
   display: flex;
-  background-color: #1c1c1e;
+  background-color: var(--bg-dark-color-2);
   border-radius: 3rem;
   padding: 15px;
   justify-content: center;
@@ -76,7 +76,7 @@
 
 .balanceContainer{
   display: flex;
-  background-color: #1c1c1e;
+  background-color: var(--bg-dark-color-2);
   padding: .50rem;
   border-radius: 2rem;
 }
@@ -88,4 +88,5 @@
 
 .balanceContainer > p{
   margin: auto .75rem auto 0;
+  color: #a1a5b0;
 }
