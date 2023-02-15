@@ -18,3 +18,19 @@ body {
   margin: 0;
   background-color: var(--light-color);
 }
+
+::-webkit-scrollbar{
+  width: .3rem;
+}
+
+::-webkit-scrollbar-track{
+  background-color: rebeccapurple;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgba(219, 69, 219, 0.8);
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: #212529;
+}
