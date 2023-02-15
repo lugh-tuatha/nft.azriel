@@ -4,7 +4,7 @@
 }
 
 .app{
-  background-color: var(--light-color);
+  background-color: var(--bg-dark-color);
   padding: 1.25rem;
   min-height: 100vh;
   max-width: 100vw;
