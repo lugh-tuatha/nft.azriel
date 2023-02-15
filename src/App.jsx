@@ -9,6 +9,7 @@ import Btn  from './components/button';
 import Header from './components/header';
 import Cards from './components/cards';
 import Feature from './components/feature';
+import TeamCards from './components/team-cards'
 
 import './App.css'
 
@@ -17,6 +18,7 @@ function App() {
   return (
     <div className='app'>
       <Header />
+      <TeamCards />
     </div>
   )
 }
