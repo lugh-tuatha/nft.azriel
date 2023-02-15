@@ -1,13 +1,35 @@
 .featureContainer{
   width: 95%;
-  height: 18rem;
+  height: 30rem;
   border-radius: 3rem;
   margin: 0 auto;
-  background-color: #fff;
+  background: linear-gradient(to right, #f15bb5, #7209b7);
+  position: relative;
 }
-
+.featureContainer::before {
+  content: url("/src/assets/image/banner/rocket.png");
+  position: absolute;
+  right: -20px;
+  bottom: -40px;
+  transform: scaleX(-1);
+}
 .featureContainer > h1{
   margin: 2rem;
   padding: 1rem 0 0 0;
   max-width: 470px;
+}
+.featureContainer:hover::before {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scaleX(-1) translate3d(0px, 0px, 0);
+  }
+  50% {
+    transform: scaleX(-1) translate3d(0px, -50px, 0);
+  }
+  100% {
+    transform: scaleX(-1) translate3d(0px, 0px, 0);
+  }
 }
