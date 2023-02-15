@@ -19,6 +19,7 @@ function App() {
     <div className='app'>
       <Header />
       <TeamCards />
+      <Cards />
     </div>
   )
 }
