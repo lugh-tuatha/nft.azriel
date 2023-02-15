@@ -3,9 +3,11 @@
   height: 30rem;
   border-radius: 3rem;
   margin: 0 auto;
-  background: linear-gradient(to right, #f15bb5, #7209b7);
   position: relative;
+  background-image: url("/src/assets/image/banner/featureBanner.png");
+  background-size: cover;
 }
+
 .featureContainer::before {
   content: url("/src/assets/image/banner/rocket.png");
   position: absolute;
@@ -13,11 +15,13 @@
   bottom: -40px;
   transform: scaleX(-1);
 }
+
 .featureContainer > h1{
   margin: 2rem;
   padding: 1rem 0 0 0;
   max-width: 470px;
 }
+
 .featureContainer:hover::before {
   animation: bounce 1s infinite;
 }
