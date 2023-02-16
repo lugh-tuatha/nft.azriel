@@ -1,6 +1,6 @@
 import './feature.css'
 import Button from '../button'
-import inspace from '/src/assets/image/banner/NFT InSpace.png'
+import inspace from '../../assets/image/banner/NFTInSpace.png'
 function Feature() {
   return (
     <div className='featureContainer'>
