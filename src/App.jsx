@@ -14,7 +14,6 @@ function App() {
   return (
     <div className='app'>
       <Header />
-      <Cards />
       <TeamCards />
     </div>
   )
