@@ -3,6 +3,7 @@ import Cards from "../components/cards";
 import nft1 from "../assets/image/nft-list/nft-1.png"
 import nft2 from "../assets/image/nft-list/nft-2.png"
 import mekaDriver from "../assets/image/nft-list/meka-driver.avif"
+import pirateNation from "../assets/image/nft-list/pirate.png"
 
 export default function Marketplace() {
 
@@ -25,6 +26,12 @@ export default function Marketplace() {
       highestBid: "1 eth",
       image: mekaDriver
     },
+    {
+      id: 4,
+      nftName: "Pirate",
+      highestBid: "0.22 eth",
+      image: pirateNation
+    }
   ];
 
   return (
