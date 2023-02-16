@@ -1,8 +1,9 @@
 import Cards from "../components/cards";
+import "./pages.css"
 
 import cyberCorg from "../assets/image/nft-list/cyber-korg.avif"
 import journey from "../assets/image/nft-list/journey.png"
-import mekaDriver from "../assets/image/nft-list/meka-driver.avif"
+import mekaDriver from "../assets/image/nft-list/Meka-driver.avif"
 import pirateNation from "../assets/image/nft-list/pirate.png"
 
 export default function Marketplace() {

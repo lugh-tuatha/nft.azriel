@@ -4,11 +4,12 @@ import miamiArt from "../assets/image/memory-game/miami-art.png";
 import nftCulture from "../assets/image/memory-game/nft-culture.png";
 import punks from "../assets/image/memory-game/punks.png";
 import retro from "../assets/image/memory-game/retro.jpg";
+import digitalArt from "../assets/image/memory-game/digital-art.png"
 import backCard from "../assets/image/memory-game/back-card.png";
 
 const cardImages = [
   { "src": artInspo },
-  { "src": backCard },
+  { "src": digitalArt },
   { "src": miamiArt},
   { "src": nftCulture },
   { "src": punks },
