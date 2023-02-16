@@ -90,3 +90,16 @@
   margin: auto .75rem auto 0;
   color: #a1a5b0;
 }
+
+.burgerButton > img{
+  width: 2.5rem;
+}
+
+@media screen and (max-width: 950px) {
+  .searchBar,
+  .headerItems,
+  .headerActions,
+  .balanceContainer{
+    display: none;
+  }
+}

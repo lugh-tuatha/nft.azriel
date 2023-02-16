@@ -33,7 +33,7 @@ html {
 }
 
 .cardContainer {
-  max-width: 350px;
+  max-width: 20rem;
   max-height: 500px;
   margin: auto;
   display: flex;
@@ -61,7 +61,7 @@ html {
 }
 
 .card-head > img{
-  width: 100%;
+  width: 20rem;
   aspect-ratio: 1/1;
 }
 

@@ -50,9 +50,6 @@ class Header extends Component{
           <p>0.515 ETH</p>
         </div>
 
-        <div>
-          
-        </div>
       </div>
     )
 
