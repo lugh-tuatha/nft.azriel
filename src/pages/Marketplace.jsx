@@ -1,7 +1,7 @@
 import Cards from "../components/cards";
 
-import nft1 from "../assets/image/nft-list/nft-1.png"
-import nft2 from "../assets/image/nft-list/nft-2.png"
+import cyberCorg from "../assets/image/nft-list/cyber-korg.avif"
+import journey from "../assets/image/nft-list/journey.png"
 import mekaDriver from "../assets/image/nft-list/meka-driver.avif"
 import pirateNation from "../assets/image/nft-list/pirate.png"
 
@@ -10,15 +10,15 @@ export default function Marketplace() {
   const nfts = [
     {
       id: 1,
-      nftName: "Blackjack Game",
+      nftName: "Cyber Corg",
       highestBid: "12 eth",
-      image: nft1
+      image: cyberCorg
     },
     {
       id: 2,
       nftName: "Aceeee",
-      highestBid: "loremg over 21.",
-      image: nft2
+      highestBid: "0.0568 ETH",
+      image: journey
     },
     {
       id: 3,
@@ -35,8 +35,7 @@ export default function Marketplace() {
   ];
 
   return (
-    <div>
-      <p>Marketplace</p>
+    <div className="marketplaceContainer">
       {nfts.map(nft => (
         <Cards key={nft.id} nftName={nft.nftName} highestBid={nft.highestBid} image={nft.image} />
       ))}

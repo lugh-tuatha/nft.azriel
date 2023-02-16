@@ -3,13 +3,11 @@ import './cards.css'
 function Cards({ nftName, highestBid, image }) {
   
   return (
-    <main className="container">
+    <main className="cardContainer">
       <div className="wrapper">
-        <div className="card-rotate-bg"></div>
-
         <div className="card">
           <div className="card-head">
-            <img src={image} alt={nftName}/>
+            <img src={image} alt={nftName} className="img-fluid"/>
             <button className="bid-btn">Place Bid</button>
           </div>
 
