@@ -1,7 +1,8 @@
 import Cards from "../components/cards";
+
 import nft1 from "../assets/image/nft-list/nft-1.png"
 import nft2 from "../assets/image/nft-list/nft-2.png"
-
+import mekaDriver from "../assets/image/nft-list/meka-driver.avif"
 
 export default function Marketplace() {
 
@@ -17,7 +18,13 @@ export default function Marketplace() {
       nftName: "Aceeee",
       highestBid: "loremg over 21.",
       image: nft2
-    }
+    },
+    {
+      id: 3,
+      nftName: "Meka driver",
+      highestBid: "1 eth",
+      image: mekaDriver
+    },
   ];
 
   return (
