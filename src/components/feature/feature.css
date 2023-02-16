@@ -139,3 +139,17 @@ img.nftLogo {
   border-radius: 10px;
   margin-bottom: 20px;
 }
+
+p.desc {
+  position: absolute;
+  top: 160px;
+  right: 32px;
+  width: 410px;
+  border: solid #000000;
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform .2s;
+}
+.featureContainer:hover p.desc {
+  transform: scale(1.1);
+}
