@@ -1,21 +1,38 @@
+import { useState } from "react"; 
 import GameCards from "../components/gameCards";
 import blackJackGame from '../assets/image/games/blackjack.png';
 
-export default function GameZone() {
-  const games = [
-    {
-      title: "Blackjack Game",
-      description: "Blackjack is a card game where the objective is to beat the dealer by having a hand of cards that is worth more points than the dealer's hand, without going over 21.",
-      image: blackJackGame
-    }
-  ];
+const cardImages = [
+  { "src": "../assets/image/memory-game/art-inspo.png" },
+  { "src": "../assets/image/memory-game/art-digital-art.png" },
+  { "src": "../assets/image/memory-game/miami-art.png" },
+  { "src": "../assets/image/memory-game/nft-culture.png" },
+  { "src": "../assets/image/memory-game/punks.png" },
+  { "src": "../assets/image/memory-game/retro.png" },
+]
 
-  return (
+export default function memoryGame() {
+  const [cards, setCards] = useState([])
+  const [turns, setTurns] = useState(0)
+
+  // shuffle cards
+  const shuffledCards = () => {
+    const shuffledCards = [...cardImages, ...cardImages]
+      .sort(() => Math.random() - 0.5)
+      .map((card) => ({ ...card, id: Math.random() }))
+
+      setCards(shuffledCards)
+      setTurns(0)
+  }
+
+  console.log(cards, )
+  
+  return(
     <div>
-      <p>Gamezone</p>
-      {games.map(game => (
-        <GameCards title={game.title} description={game.description} image={game.image} />
-      ))}
+      <h1>Magic Match</h1>
+      <button onClick={shuffledCards}>New Game</button>
     </div>
-  );
+  )
 }
+
+

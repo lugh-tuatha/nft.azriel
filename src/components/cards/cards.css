@@ -1,0 +1,127 @@
+:root {
+  --Raisin-black: hsl(240, 20%, 17%);
+  --Silver-chalice: hsl(0, 0%, 67%);
+  --Blue-jeanse: hsl(202, 100%, 50%);
+  --Dark-Blue-jeanse: hsl(202, 100%, 16%);
+  --white: hsl(0, 0%, 100%);
+  --Xiketic: hsl(240, 21%, 9%);
+  --Xiketic-black: hsl(240, 22%, 10%);
+  --space-cadet: hsl(220, 37%, 21%);
+}
+
+button {
+  outline: none;
+  border: none;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+img,
+span,
+ion-icon,
+a {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+.cardContainer {
+  max-width: 350px;
+  max-height: 500px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.card {
+  position: relative;
+  background: var(--Raisin-black);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.card-head {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.card-head > img{
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.card-head .bid-btn {
+  position: absolute;
+  background: var(--Blue-jeanse);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--white);
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+.card-head .bid-btn:hover {
+  background: var(--Raisin-black);
+}
+
+.card:hover .bid-btn {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.wrapper-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper-flex.mb {
+  margin-bottom: 15px;
+}
+
+.card-body .product-name {
+  margin-bottom: 5px;
+}
+
+.card-body .product-name p {
+  color: var(--white);
+  transition: all 0.25s ease;
+}
+
+.card-body .product-name p:hover {
+  color: var(--Blue-jeanse);
+}
+
+.card-body .latest-bid {
+  color: var(--Silver-chalice);
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.wrapper-flex .highest-bid {
+  color: var(--Blue-jeanse);
+  font-size: 12px;
+  font-weight: 600;
+}
