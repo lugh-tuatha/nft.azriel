@@ -15,10 +15,22 @@ class Header extends Component{
   constructor(props){
     super(props);
     this.state = {
-      servePage: "dashboard"
+      servePage: "dashboard",
+      menuOpen: false,
     }
+    // bind event handler to the component instance
+    this.handleMenuClick = this.handleMenuClick.bind(this);
   }
+
+  handleMenuClick() {
+    this.setState(prevState => ({ menuOpen: !prevState.menuOpen }));
+  }
+
   render() {
+    // use the state to add or remove the 'open' class
+    const menuClass = this.state.menuOpen ? 'menu-btn open' : 'menu-btn';
+      const navClass = this.state.menuOpen ? 'headerItems show' : 'headerItems';
+
     let content = "";
     let nav = (
       <div className='header'>
@@ -33,7 +45,7 @@ class Header extends Component{
           <input className='searchInput' placeholder='Collection, item....'/>
         </div>
 
-        <div className='headerItems'>
+        <div className={navClass}>
           <p onClick={() => this.setState({servePage: "dashboard"})}>Dashboard</p>
           <p onClick={() => this.setState({servePage: "marketplace"})}>Marketplace</p>
           <p onClick={() => this.setState({servePage: "gamezone"})}>Game zone</p>
@@ -50,6 +62,11 @@ class Header extends Component{
           <p>0.515 ETH</p>
         </div>
 
+        <div className={menuClass} onClick={this.handleMenuClick}>
+          <div className="menu-btn__burger">
+            
+          </div>
+        </div>
       </div>
     )
 
@@ -60,10 +77,11 @@ class Header extends Component{
     }else if (this.state.servePage == "gamezone"){
       content = <GameZone />;
     }
+
     return (
       <div>
-      {nav}
-      {content}
+        {nav}
+        {content}
       </div>
     );
   }
