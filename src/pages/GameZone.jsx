@@ -1,11 +1,12 @@
-import { useState } from "react"; 
+import { useEffect, useState } from "react"; 
 import artInspo from "../assets/image/memory-game/art-inspo.png";
 import miamiArt from "../assets/image/memory-game/miami-art.png";
 import nftCulture from "../assets/image/memory-game/nft-culture.png";
 import punks from "../assets/image/memory-game/punks.png";
 import retro from "../assets/image/memory-game/retro.jpg";
 import digitalArt from "../assets/image/memory-game/digital-art.png"
-import backCard from "../assets/image/memory-game/back-card.png";
+
+import SingleCard from "../components/single-card";
 
 const cardImages = [
   { "src": artInspo },
@@ -19,6 +20,8 @@ const cardImages = [
 export default function memoryGame() {
   const [cards, setCards] = useState([])
   const [turns, setTurns] = useState(0)
+  const [choiceOne, setChoiceOne] = useState(null)
+  const [choiceTwo, setChoiceTwo] = useState(null)
 
   // shuffle cards
   const shuffledCards = () => {
@@ -26,8 +29,34 @@ export default function memoryGame() {
       .sort(() => Math.random() - 0.5)
       .map((card) => ({ ...card, id: Math.random() }))
 
-      setCards(shuffledCards)
-      setTurns(0)
+    setCards(shuffledCards)
+    setTurns(0)
+  }
+
+  // handle a choice
+  const handleChoice = (card) => {
+    choiceOne ? setChoiceTwo(card) : setChoiceOne(card)
+  }
+
+  // compare 2 selected cards
+  useEffect(() => {
+    if (choiceOne && choiceTwo){
+      
+      if (choiceOne.src === choiceTwo.src) {
+        console.log('those cards match')
+        resetTurn()
+      } else {
+        console.log("do not match")
+        resetTurn()
+      }
+    }
+  }, [choiceOne, choiceTwo])
+
+  // reset choice & increase turn
+  const resetTurn = () => {
+    setChoiceOne(null)
+    setChoiceTwo(null)
+    setTurns(prevTurns => prevTurns + 1)
   }
 
   return(
@@ -37,12 +66,7 @@ export default function memoryGame() {
 
       <div className="card-grid">
         {cards.map(card => (
-          <div className="card" key={card.id}>
-            <div>
-              <img className="front" src={card.src} alt="card front"/>
-              <img className="back" src={backCard} alt="card back" />
-            </div>
-          </div>
+          <SingleCard key={card.id} card={card} handleChoice={handleChoice}/>
         ))}
       </div>
     </div>
