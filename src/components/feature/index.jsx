@@ -5,7 +5,7 @@ function Feature() {
   return (
     <div className='featureContainer'>
       <img className='nftLogo' src={inspace} alt="" />
-      <h1>NFT InSpace<i class="verified1 bi bi-patch-check-fill"></i></h1>
+      <h1>NFT Cosmonaut<i class="verified1 bi bi-patch-check-fill"></i></h1>
       <h5>By AzrielPublishing<i className="verified2 bi bi-patch-check-fill"></i><br/>8808 items - 0.125 ETH</h5>
       <div className="action-btns">
         <button className="btn-gray text-uppercase">Minting now</button>
