@@ -1,14 +1,18 @@
 import { useState } from "react"; 
-import GameCards from "../components/gameCards";
-import blackJackGame from '../assets/image/games/blackjack.png';
+import artInspo from "../assets/image/memory-game/art-inspo.png";
+import miamiArt from "../assets/image/memory-game/miami-art.png";
+import nftCulture from "../assets/image/memory-game/nft-culture.png";
+import punks from "../assets/image/memory-game/punks.png";
+import retro from "../assets/image/memory-game/retro.jpg";
+import backCard from "../assets/image/memory-game/back-card.png";
 
 const cardImages = [
-  { "src": "../assets/image/memory-game/art-inspo.png" },
-  { "src": "../assets/image/memory-game/art-digital-art.png" },
-  { "src": "../assets/image/memory-game/miami-art.png" },
-  { "src": "../assets/image/memory-game/nft-culture.png" },
-  { "src": "../assets/image/memory-game/punks.png" },
-  { "src": "../assets/image/memory-game/retro.png" },
+  { "src": artInspo },
+  { "src": backCard },
+  { "src": miamiArt},
+  { "src": nftCulture },
+  { "src": punks },
+  { "src": retro },
 ]
 
 export default function memoryGame() {
@@ -25,14 +29,21 @@ export default function memoryGame() {
       setTurns(0)
   }
 
-  console.log(cards, )
-  
   return(
-    <div>
+    <div className="App">
       <h1>Magic Match</h1>
       <button onClick={shuffledCards}>New Game</button>
+
+      <div className="card-grid">
+        {cards.map(card => (
+          <div className="card" key={card.id}>
+            <div>
+              <img className="front" src={card.src} alt="card front"/>
+              <img className="back" src={backCard} alt="card back" />
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
-
-
