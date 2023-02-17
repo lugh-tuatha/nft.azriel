@@ -7,7 +7,7 @@ Marketplace styles
 ----------------*/
 .marketplaceContainer{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
 }
 
@@ -29,9 +29,9 @@ MemoryGame styles
 /*----------------
 Responsiveness
 ----------------*/
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1350px) {
   .marketplaceContainer {
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
@@ -41,7 +41,7 @@ Responsiveness
   }
 }
 
-@media screen and (max-width: 713px) {
+@media screen and (max-width: 800px) {
   .marketplaceContainer {
     grid-template-columns: 1fr 1fr ;
   }
@@ -49,12 +49,6 @@ Responsiveness
 
 @media screen and (max-width: 550px) {
   .marketplaceContainer {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .marketplaceContainer {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }

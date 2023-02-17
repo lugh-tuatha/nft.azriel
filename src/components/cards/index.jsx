@@ -9,11 +9,10 @@ function Cards({ nftName, price, image }) {
     <div className="nftCardsContainer">
       <div className="nftCard">
         <div className="thumbnail">
-          <img src={image} alt="image of a cube" width="350px" height="auto" />
+          <img src={image} alt="image of a cube" className='img-fluid'/>
         </div>
         <div className='cardBody'>
           <h1>{nftName}</h1>
-          <p>Our Equilibrium collection promotes balance and calm.</p>
         </div>
         <div className="details">
           <div className="type">

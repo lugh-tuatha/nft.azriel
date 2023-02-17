@@ -7,7 +7,7 @@ export default function Marketplace() {
   return (
     <div className="marketplaceContainer">
       {nfts.map(nft => (
-        <Cards key={nft.id} nftName={nft.nftName} price={nft.price} image={nft.image} />
+        <Cards key={nft.id} nftName={nft.nftName} price={nft.price} image={nft.image}/>
       ))}
     </div>
   );
