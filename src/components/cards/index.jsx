@@ -1,14 +1,15 @@
 import './cards.css'
+import Button from "../button"
 
 function Cards({ nftName, highestBid, image }) {
-  
+
   return (
     <main className="cardContainer">
       <div className="wrapper">
         <div className="card">
           <div className="card-head">
             <img src={image} alt={nftName} className="img-fluid"/>
-            <button className="bid-btn">Place Bid</button>
+            <Button buttonName="Buy"/>
           </div>
 
           <div className="card-body">
