@@ -7,6 +7,7 @@ import retro from "../assets/image/memory-game/retro.jpg";
 import digitalArt from "../assets/image/memory-game/digital-art.png"
 
 import SingleCard from "../components/single-card";
+import Button from "../components/button"
 
 const cardImages = [
   { "src": artInspo, matched: false},
@@ -58,13 +59,11 @@ export default function memoryGame() {
         })
         resetTurn()
       } else {
-        console.log("do not match")
         setTimeout(() => resetTurn(), 1000)
       }
     }
   }, [choiceOne, choiceTwo])
 
-  console.log(cards)
 
 
   // reset choice & increase turn
@@ -81,9 +80,12 @@ export default function memoryGame() {
   }, [])
 
   return(
-    <div className="App">
-      <h1>Magic Match</h1>
-      <button onClick={shuffledCards}>New Game</button>
+    <div className="gameZoneContainer">
+      <div className="gameZoneHeader">
+        <h1 className="text-center">Magic Match</h1>
+        <button onClick={shuffledCards} className="newGameBtn">New Game</button>
+      </div>
+
 
       <div className="card-grid">
         {cards.map(card => (

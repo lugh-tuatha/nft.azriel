@@ -16,10 +16,6 @@ function App() {
   return (
     <div className='app'>
       <Header />
-      <TeamCards />
-      <Announcements />
-      <Collection />
-      <Footer />
     </div>
   )
 }

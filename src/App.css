@@ -3,8 +3,11 @@
   margin: 0 auto;
 }
 
-.app{
+body{
   background-color: var(--bg-dark-color);
+}
+
+.app{
   padding: 1.25rem;
   min-height: 100vh;
   max-width: 100vw;
