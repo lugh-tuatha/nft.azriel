@@ -12,49 +12,49 @@ const nfts = [
   {
     id: 1,
     nftName: "Cyber Corg",
-    highestBid: "12 eth",
+    price: "12 eth",
     image: cyberCorg
   },
   {
     id: 2,
     nftName: "Aceeee",
-    highestBid: "0.0568 ETH",
+    price: "0.0568 ETH",
     image: journey
   },
   {
     id: 3,
     nftName: "Meka driver",
-    highestBid: "1 eth",
+    price: "1 eth",
     image: mekaDriver
   },
   {
     id: 4,
     nftName: "Pirate",
-    highestBid: "0.22 eth",
+    price: "0.22 eth",
     image: pirateNation
   },
   {
     id: 5,
     nftName: "SupDuck",
-    highestBid: "0.22 eth",
+    price: "0.22 eth",
     image: supDuck
   },
   {
     id: 6,
     nftName: "Bean",
-    highestBid: "0.22 eth",
+    price: "0.22 eth",
     image: bean
   },
   {
     id: 7,
     nftName: "Hooligan",
-    highestBid: "0.22 eth",
+    price: "0.22 eth",
     image: hooligan
   },
   {
     id: 8,
     nftName: "Kota",
-    highestBid: "0.22 eth",
+    price: "0.22 eth",
     image: kota
   },
 ];
