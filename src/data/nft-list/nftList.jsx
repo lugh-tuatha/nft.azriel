@@ -78,6 +78,27 @@ import boredApeKennelClub from "../../assets/image/nft-list/boredApeKennelClub.a
 import moonBirds from "../../assets/image/nft-list/moonBirds.avif"
 import chungos from "../../assets/image/nft-list/chungos.avif"
 import genuineUndead from "../../assets/image/nft-list/genuineUndead.avif"
+import cryptoBlur from "../../assets/image/nft-list/cryptoBlur.webp"
+import kiyoshi from "../../assets/image/nft-list/kiyoshi.webp"
+import genesisBox from "../../assets/image/nft-list/genesisBox.webp"
+import boredApe from "../../assets/image/nft-list/boredApe.avif"
+import bitGans from "../../assets/image/nft-list/bitGans.webp"
+import classicEbony from "../../assets/image/nft-list/classicEbony.avif"
+import isio from "../../assets/image/nft-list/isio.avif"
+import theOverseers from "../../assets/image/nft-list/theOverseers.avif"
+import century from "../../assets/image/nft-list/century.avif"
+import chainspace from "../../assets/image/nft-list/chainspace.avif"
+import openWide from "../../assets/image/nft-list/openWide.avif"
+import theMetascapes from "../../assets/image/nft-list/theMetascapes.avif"
+import amazonia from "../../assets/image/nft-list/amazonia.avif"
+import treyRatcliff from "../../assets/image/nft-list/treyRatcliff.avif"
+import magicRefinery from "../../assets/image/nft-list/magicRefinery.avif"
+import veeFriends from "../../assets/image/nft-list/veeFriends.avif"
+import decentralEyes from "../../assets/image/nft-list/decentralEyes.avif"
+import cityBlocks from "../../assets/image/nft-list/cityBlocks.avif"
+import lostParadise from "../../assets/image/nft-list/lostParadise.avif"
+import theFourSeason from "../../assets/image/nft-list/theFourSeason.avif"
+
 
 
 
@@ -563,6 +584,126 @@ const nfts = [
     nftName: "Genuine Undead",
     price: 0.349 + " ETH",
     image: genuineUndead,
+  },
+  {
+    id: 81,
+    nftName: "CryptoBlur",
+    price: 0.027 + " ETH",
+    image: cryptoBlur,
+  },
+  {
+    id: 82,
+    nftName: "Kiyoshi's Seeds Project",
+    price: 0.0269 + " ETH",
+    image: kiyoshi,
+  },
+  {
+    id: 83,
+    nftName: "Genesis Box",
+    price: 0.181 + " ETH",
+    image: genesisBox,
+  },
+  {
+    id: 84,
+    nftName: "Bored Ape Yacht Club",
+    price: 114.950 + " ETH",
+    image: boredApe,
+  },
+  {
+    id: 85,
+    nftName: "BitGANs",
+    price: 2.8 + " ETH",
+    image: bitGans,
+  },
+  {
+    id: 86,
+    nftName: "Classic Ebony",
+    price: 0.058 + " ETH",
+    image: classicEbony,
+  },
+  {
+    id: 87,
+    nftName: "Isio Star",
+    price: 0.08 + " ETH",
+    image: isio,
+  },
+  {
+    id: 88,
+    nftName: "The OverSeers",
+    price: 0.497 + " ETH",
+    image: theOverseers,
+  },
+  {
+    id: 89,
+    nftName: "Century",
+    price: 5.7 + " ETH",
+    image: century,
+  },
+  {
+    id: 90,
+    nftName: "Chainspace",
+    price: 0.329 + " ETH",
+    image: chainspace,
+  },
+  {
+    id: 91,
+    nftName: "Open Wide",
+    price: 0.0091 + " ETH",
+    image: openWide,
+  },
+  {
+    id: 92,
+    nftName: "The Metascapes",
+    price: 0.4 + " ETH",
+    image: theMetascapes,
+  },
+  {
+    id: 93,
+    nftName: "Amazonia",
+    price: 0.1 + " ETH",
+    image: amazonia,
+  },
+  {
+    id: 94,
+    nftName: "Trey Ratcliff",
+    price: 0.090 + " ETH",
+    image: treyRatcliff,
+  },
+  {
+    id: 95,
+    nftName: "Magic Refinery",
+    price: 0.520 + " ETH",
+    image: magicRefinery,
+  },
+  {
+    id: 96,
+    nftName: "VeeFriends",
+    price: 0.3293 + " ETH",
+    image: veeFriends,
+  },
+  {
+    id: 97,
+    nftName: "DecentralEyes",
+    price: 0.3293 + " ETH",
+    image: decentralEyes,
+  },
+  {
+    id: 98,
+    nftName: "City Blocks",
+    price: 0.250 + " ETH",
+    image: cityBlocks,
+  },
+  {
+    id: 99,
+    nftName: "Lost Paradise",
+    price: 0.950 + " ETH",
+    image: lostParadise,
+  },
+  {
+    id: 100,
+    nftName: "The Four Season",
+    price: 27 + " ETH",
+    image: theFourSeason,
   },
 ];
 
