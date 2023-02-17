@@ -158,7 +158,7 @@ const nfts = [
   },
   {
     id: 13,
-    nftName: "Shrapnel Operators Collection",
+    nftName: "Shrapnel Operators",
     price: 0.078 + " ETH",
     image: shrapnelOperatorsCollection,
   },
