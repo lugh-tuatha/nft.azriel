@@ -49,6 +49,35 @@ import rugRadio from "../../assets/image/nft-list/rugRadio.avif"
 import theOrdinalWar from "../../assets/image/nft-list/theOrdinalWar.avif"
 import qzukinft from "../../assets/image/nft-list/qzukinft.avif"
 import cryptoSimeji from "../../assets/image/nft-list/cryptoSimeji.avif"
+import mechMindsAi from "../../assets/image/nft-list/mechMindsAi.avif"
+import digiDaigaku from "../../assets/image/nft-list/digiDaigaku.avif"
+import kanpaiPandas from "../../assets/image/nft-list/kanpaiPandas.avif"
+import luppyClub from "../../assets/image/nft-list/luppyClub.avif"
+import cutties from "../../assets/image/nft-list/cutties.avif"
+import tjo from "../../assets/image/nft-list/tjo.avif"
+import feelArtEssence from "../../assets/image/nft-list/feelArtEssence.avif"
+import thePendings from "../../assets/image/nft-list/thePendings.avif"
+import notYourBro from "../../assets/image/nft-list/notYourBro.avif"
+import darkSideOFTheRainbow from "../../assets/image/nft-list/darkSideOfTheRainbow.webp"
+import humankind from "../../assets/image/nft-list/humankind.avif"
+import lascauxEditions from "../../assets/image/nft-list/lascauxEditions.webp"
+import ponyjacks from "../../assets/image/nft-list/ponyjacks.avif"
+import theArtmei from "../../assets/image/nft-list/theArtmei.webp"
+import whiteHearts from "../../assets/image/nft-list/whiteHearts.avif"
+import dreamer from "../../assets/image/nft-list/dreamer.avif"
+import memeSeizer from "../../assets/image/nft-list/memeSeizer.avif"
+import banksy from "../../assets/image/nft-list/banksy.avif"
+import nobleGallery from "../../assets/image/nft-list/nobleGallery.avif"
+import deepblack from "../../assets/image/nft-list/deepblack.avif"
+import anxietyDisorders from "../../assets/image/nft-list/anxietyDisorders.avif"
+import bluFamily from "../../assets/image/nft-list/bluFamily.webp"
+import chainRunners from "../../assets/image/nft-list/chainRunners.avif"
+import cryptoBirbs from "../../assets/image/nft-list/cryptoBirbs.avif"
+import lallamaPic from "../../assets/image/nft-list/lallamaPic.avif"
+import boredApeKennelClub from "../../assets/image/nft-list/boredApeKennelClub.avif"
+import moonBirds from "../../assets/image/nft-list/moonBirds.avif"
+import chungos from "../../assets/image/nft-list/chungos.avif"
+import genuineUndead from "../../assets/image/nft-list/genuineUndead.avif"
 
 
 
@@ -360,6 +389,180 @@ const nfts = [
     nftName: "Crypto Simeji",
     price: 0.055 + " ETH",
     image: cryptoSimeji,
+  },
+  {
+    id: 52,
+    nftName: "Mech Minds AI",
+    price: 0.01 + " ETH",
+    image: mechMindsAi,
+  },
+  {
+    id: 53,
+    nftName: "Digi Daigaku Genesis",
+    price: 9.1 + " ETH",
+    image: digiDaigaku,
+  },
+  {
+    id: 54,
+    nftName: "Kanpai Pandas",
+    price: 2.4667 + " ETH",
+    image: kanpaiPandas,
+  },
+  {
+    id: 55,
+    nftName: "Luppy Club Official",
+    price: 0.720 + " ETH",
+    image: luppyClub,
+  },
+  {
+    id: 56,
+    nftName: "Cutties",
+    price: 0.0201 + " ETH",
+    image: cutties,
+  },
+  {
+    id: 57,
+    nftName: "TJO's Editions",
+    price: 2.180 + " ETH",
+    image: tjo,
+  },
+  {
+    id: 58,
+    nftName: "Feel Art Essence",
+    price: 0.088 + " ETH",
+    image: feelArtEssence,
+  },
+  {
+    id: 59,
+    nftName: "The Pendings",
+    price: 0.069 + " ETH",
+    image: thePendings,
+  },
+  {
+    id: 60,
+    nftName: "Not Your Bro",
+    price: 0.0264 + " ETH",
+    image: notYourBro,
+  },
+  {
+    id: 61,
+    nftName: "Dark Side of the Rainbow",
+    price: 0.0699 + " ETH",
+    image: darkSideOFTheRainbow,
+  },
+  {
+    id: 62,
+    nftName: "Humankind",
+    price: 0.037 + " ETH",
+    image: humankind,
+  },
+  {
+    id: 63,
+    nftName: "Lascaux Editions",
+    price: 0.007 + " ETH",
+    image: lascauxEditions,
+  },
+  {
+    id: 64,
+    nftName: "Ponyjacks",
+    price: 0.064 + " ETH",
+    image: ponyjacks,
+  },
+  {
+    id: 65,
+    nftName: "The Art Mei",
+    price: 0.08 + " ETH",
+    image: theArtmei,
+  },
+  {
+    id: 66,
+    nftName: "White Hearts",
+    price: 0.0579 + " ETH",
+    image: whiteHearts,
+  },
+  {
+    id: 67,
+    nftName: "Dreamer",
+    price: 0.02 + " ETH",
+    image: dreamer,
+  },
+  {
+    id: 68,
+    nftName: "Meme Seizer",
+    price: 0.003 + " ETH",
+    image: memeSeizer,
+  },
+  {
+    id: 69,
+    nftName: "Who is Banksy",
+    price: 0.69 + " ETH",
+    image: banksy,
+  },
+  {
+    id: 70,
+    nftName: "Noble Gallery",
+    price: 0.123 + " ETH",
+    image: nobleGallery,
+  },
+  {
+    id: 71,
+    nftName: "DeepBlack",
+    price: 1.240 + " ETH",
+    image: deepblack,
+  },
+  {
+    id: 72,
+    nftName: "Anxiety Disorders",
+    price: 0.098 + " ETH",
+    image: anxietyDisorders,
+  },
+  {
+    id: 73,
+    nftName: "Blu Family",
+    price: 0.169 + " ETH",
+    image: bluFamily,
+  },
+  {
+    id: 74,
+    nftName: "Chain Runners",
+    price: 0.012 + " ETH",
+    image: chainRunners,
+  },
+  {
+    id: 75,
+    nftName: "CryptoBirbs",
+    price: 0.0966 + " ETH",
+    image: cryptoBirbs,
+  },
+  {
+    id: 76,
+    nftName: "LallamaPIC Collection",
+    price: 0.008 + " ETH",
+    image: lallamaPic,
+  },
+  {
+    id: 77,
+    nftName: "Bored Ape Kennel Club",
+    price: 10.1053 + " ETH",
+    image: boredApeKennelClub,
+  },
+  {
+    id: 78,
+    nftName: "Moonbirds Oddities",
+    price: 1.110 + " ETH",
+    image: moonBirds,
+  },
+  {
+    id: 79,
+    nftName: "Chungos",
+    price: 0.137 + " ETH",
+    image: chungos,
+  },
+  {
+    id: 80,
+    nftName: "Genuine Undead",
+    price: 0.349 + " ETH",
+    image: genuineUndead,
   },
 ];
 
