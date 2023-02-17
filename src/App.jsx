@@ -7,7 +7,8 @@ import Button from 'react-bootstrap/Button';
 import Header from './components/header';
 import Cards from './components/cards';
 import TeamCards from './components/team-cards';
-
+import Footer from './components/footer';
+import Announcements from './components/announcements';
 import './App.css'
 
 function App() {
@@ -15,6 +16,8 @@ function App() {
     <div className='app'>
       <Header />
       <TeamCards />
+      <Announcements />
+      <Footer />
     </div>
   )
 }
