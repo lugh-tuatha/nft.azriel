@@ -51,13 +51,7 @@ class Header extends Component{
           <p onClick={() => this.setState({servePage: "gamezone"})}>Game zone</p>
         </div>
 
-        <div className="headerActions">
-          <div className="themeSwitchContainer">
-            <img src={themeSwitchIcon} alt="" />
-          </div>
-        </div>
-        
-        <div className="balanceContainer">
+        <div className="balanceContainer ">
           <img src={eth} alt="eth logo" />
           <p>0.515 ETH</p>
         </div>
