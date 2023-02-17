@@ -17,8 +17,8 @@ function App() {
     <div className='app'>
       <Header />
       <TeamCards />
-      <Collection />
       <Announcements />
+      <Collection />
       <Footer />
     </div>
   )

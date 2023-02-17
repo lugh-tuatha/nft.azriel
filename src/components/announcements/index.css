@@ -5,6 +5,7 @@
 .section-header {
     display: flex;
     align-items: center;
+    margin-bottom: 15px;
 }
 span.bandge {
     background-color: rgba(228,37,117,.2);
