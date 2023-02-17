@@ -1,32 +1,34 @@
 import './cards.css'
+import Button from "../button"
 
-function Cards({ nftName, highestBid, image }) {
-  
+import ethLogo from "../../assets/image/logo/eth-logo.png"
+
+function Cards({ nftName, price, image }) {
+
   return (
-    <main className="cardContainer">
-      <div className="wrapper">
-        <div className="card">
-          <div className="card-head">
-            <img src={image} alt={nftName} className="img-fluid"/>
-            <button className="bid-btn">Place Bid</button>
+    <div className="nftCardsContainer">
+      <div className="nftCard">
+        <div className="thumbnail">
+          <img src={image} alt="image of a cube" className='img-fluid'/>
+        </div>
+        <div className='cardBody'>
+          <h1>{nftName}</h1>
+        </div>
+        <div className="details">
+          <div className="type">
+            <img className="icon" src={ethLogo} height="30px"/>
+            <p>{price}</p>
           </div>
-
-          <div className="card-body">
-            <div className="wrapper-flex mb">
-            </div>
-
-            <h4 className="product-name">
-              <p>{nftName}</p>
-            </h4>
-            <a href="#" className="latest-bid">Highest bid 1/20</a>
-
-            <div className="wrapper-flex">
-              <div className="highest-bid">{highestBid}</div>
+          <div className="time">
+            <div className="type">
+              <img className="icon" src="https://assets.codepen.io/4479043/clock.png" height="30px"/>
+              <p>3 days left</p>
             </div>
           </div>
         </div>
       </div>
-    </main>
+    </div>
+
   )
 }
 

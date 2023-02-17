@@ -52,15 +52,6 @@
   cursor: pointer;
 }
 
-.headerActions{
-  display: flex;
-  align-items: center;
-}
-
-.headerActions > div{
-  margin: 10px;
-}
-
 .themeSwitchContainer{
   display: flex;
   background-color: var(--bg-dark-color-2);
@@ -102,11 +93,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80px;
   height: 80px;
   cursor: pointer;
   transition: all .5s ease-in-out;
-  /* border: 3px solid #fff; */
 }
 
 .menu-btn__burger {
@@ -126,7 +115,6 @@
   height: 6px;
   background: #fff;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
   transition: all .5s ease-in-out;
 }
 
@@ -160,14 +148,10 @@
 }
 
 .headerItems.show {
+  position: absolute;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.headerItems.show p:hover {
-  color: red;
+  width: 84.5%;
 }
 
 .menu-btn{
@@ -175,14 +159,31 @@
 }
 
 @media screen and (max-width: 950px) {
-  .searchBar,
-  .headerItems,
-  .headerActions,
-  .balanceContainer{
+  .headerItems{
     display: none;
+  }
+
+  .balanceContainer{
+    margin:0 .75rem;
   }
 
   .menu-btn{
     display: flex;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .searchBar{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .balanceContainer{
+    margin-left: .75rem;
+  }
+
+  .balanceContainer > p{
+    font-size: .85rem;
   }
 }
