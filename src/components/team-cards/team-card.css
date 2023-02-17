@@ -3,8 +3,7 @@
   font-family: poppins;
 }
 
-html,
-body {
+.teamCardsComponent {
   width: 100%;
   height: 100%;
   display: flex;
