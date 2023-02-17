@@ -8,6 +8,10 @@ h1, h5, p, span {
 .btn-3 span {
   text-transform: uppercase;
 }
+footer.Footer {
+  padding-top: 40px;
+  margin-top: 40px;
+}
 .featureContainer{
   width: 95%;
   height: 30rem;

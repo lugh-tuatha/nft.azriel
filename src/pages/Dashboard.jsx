@@ -8,9 +8,9 @@ export default function Dashboard() {
   return (
     <div>
       <Feature />
-      <h1>Notable collection</h1>
+      {/* <h1>Notable collection</h1> */}
         
-      <h1>Teams</h1>
+      {/* <h1>Teams</h1> */}
     </div>
   )
 }
