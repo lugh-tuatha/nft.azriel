@@ -71,6 +71,13 @@ import nobleGallery from "../../assets/image/nft-list/nobleGallery.avif"
 import deepblack from "../../assets/image/nft-list/deepblack.avif"
 import anxietyDisorders from "../../assets/image/nft-list/anxietyDisorders.avif"
 import bluFamily from "../../assets/image/nft-list/bluFamily.webp"
+import chainRunners from "../../assets/image/nft-list/chainRunners.avif"
+import cryptoBirbs from "../../assets/image/nft-list/cryptoBirbs.avif"
+import lallamaPic from "../../assets/image/nft-list/lallamaPic.avif"
+import boredApeKennelClub from "../../assets/image/nft-list/boredApeKennelClub.avif"
+import moonBirds from "../../assets/image/nft-list/moonBirds.avif"
+import chungos from "../../assets/image/nft-list/chungos.avif"
+import genuineUndead from "../../assets/image/nft-list/genuineUndead.avif"
 
 
 
@@ -514,6 +521,48 @@ const nfts = [
     nftName: "Blu Family",
     price: 0.169 + " ETH",
     image: bluFamily,
+  },
+  {
+    id: 74,
+    nftName: "Chain Runners",
+    price: 0.012 + " ETH",
+    image: chainRunners,
+  },
+  {
+    id: 75,
+    nftName: "CryptoBirbs",
+    price: 0.0966 + " ETH",
+    image: cryptoBirbs,
+  },
+  {
+    id: 76,
+    nftName: "LallamaPIC Collection",
+    price: 0.008 + " ETH",
+    image: lallamaPic,
+  },
+  {
+    id: 77,
+    nftName: "Bored Ape Kennel Club",
+    price: 10.1053 + " ETH",
+    image: boredApeKennelClub,
+  },
+  {
+    id: 78,
+    nftName: "Moonbirds Oddities",
+    price: 1.110 + " ETH",
+    image: moonBirds,
+  },
+  {
+    id: 79,
+    nftName: "Chungos",
+    price: 0.137 + " ETH",
+    image: chungos,
+  },
+  {
+    id: 80,
+    nftName: "Genuine Undead",
+    price: 0.349 + " ETH",
+    image: genuineUndead,
   },
 ];
 
