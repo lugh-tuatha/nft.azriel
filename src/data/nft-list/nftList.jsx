@@ -3,7 +3,7 @@ import journey from "../../assets/image/nft-list/journey.png"
 import mekaDriver from "../../assets/image/nft-list/Meka-driver.avif"
 import pirateNation from "../../assets/image/nft-list/pirate.png"
 import kota from "../../assets/image/nft-list/kota.png"
-import supDuck from "../../assets/image/nft-list/supDuck.png"
+import supDuck from "../../assets/image/nft-list/SupDuck.png"
 import bean from "../../assets/image/nft-list/bean.png"
 import hooligan from "../../assets/image/nft-list/hooligan.png"
 
