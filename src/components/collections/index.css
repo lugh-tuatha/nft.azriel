@@ -1,0 +1,49 @@
+.container {
+    margin-top: 50px;
+    padding-top: 50px;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.card {
+    padding: 0;
+    width: 100%;
+    height: auto;
+    background-color: #1C1326;
+    display: block;
+    border-color: #40324E;
+    cursor: pointer;
+    transform: translateY(0px);
+    transition: .2s;
+}
+.card:hover {
+    transform: translateY(-5px);
+
+}
+.card img {
+    position: relative;
+}
+.card:before {
+    content: none;
+}
+h5.card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card .info {
+    transform: translateY(0px) !important;
+    opacity: 1;
+}
+.card .info p {
+    margin: 0px;
+}
+
+.card .info p.label {
+    color: #998ca6!important;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}

@@ -9,6 +9,7 @@ import Cards from './components/cards';
 import TeamCards from './components/team-cards';
 import Footer from './components/footer';
 import Announcements from './components/announcements';
+import Collection from './components/collections';
 import './App.css'
 
 function App() {

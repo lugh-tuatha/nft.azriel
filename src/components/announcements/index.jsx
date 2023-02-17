@@ -1,18 +1,8 @@
-import './index.css'
+import './index.css';
 
 import img from '../../assets/image/dummy/good_apes__pfp_1668010066125.jpg';
 
 function Announcements() {
-  function Looper({ children, times }) {
-    const keys = [...Array(times).keys()];
-    return (
-      <div>
-        {keys.map((item) => (
-          <div key={item}>{children}</div>
-        ))}
-      </div>
-    );
-  }
   return (
     <div className='container'>
       <div className="section-header">
@@ -20,7 +10,7 @@ function Announcements() {
         <span className="bandge">beta</span>
       </div>
         
-        <div className="card">
+        <div className="card no-hover">
             <ul className="list-group list-group-flush">
                 <li className="list-group-item">
                   <div className="row">
