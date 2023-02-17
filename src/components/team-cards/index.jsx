@@ -2,7 +2,6 @@ import { useState } from 'react'
 import './team-card.css'
 
 
-
 function TeamCards() {
   return (
     <div className="teamCardsComponent">
