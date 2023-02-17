@@ -5,7 +5,7 @@ import './team-card.css'
 
 function TeamCards() {
   return (
-    <div>
+    <div className="teamCardsComponent">
       <div className="wrapper">
       <div className="card">
         <img src="./src/assets/image/frame/teamcards.jpg" />
