@@ -1,10 +1,12 @@
+.nftCardsContainer{
+  width: 100v;
+}
+
 .nftCard {
   align-self: center;
   background: #15263F;
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
   border-radius: 15px;
-  max-width: auto;
-  max-height: 640px;
   padding: 15px;
 }
 
@@ -27,7 +29,7 @@ h1 {
   font-style: normal;
   color: #ffffff;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 1.25rem;
   line-height: 28px;
 }
 
@@ -67,7 +69,6 @@ p {
 .type > p{
   margin: auto 0;
 }
-
 
 .time p {
   color: #8BACD9;
