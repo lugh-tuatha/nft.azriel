@@ -6,7 +6,9 @@ Dashboard styles
 Marketplace styles
 ----------------*/
 .marketplaceContainer{
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
 }
 
 /*----------------
@@ -17,4 +19,34 @@ MemoryGame styles
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
+}
+
+@media screen and (max-width: 1280px) {
+  .marketplaceContainer {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .marketplaceContainer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 713px) {
+  .marketplaceContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .marketplaceContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .marketplaceContainer {
+    grid-template-columns: 1fr;
+  }
 }
