@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 
 import azrielLogo from '../../assets/image/logo/azriel-logo.png';
+import azriel from '../../assets/image/logo/azreil.png';
 import searchIcon from '../../assets/image/logo/search.png'
 import themeSwitchIcon from '../../assets/image/logo/theme-switch.png'
 import eth from '../../assets/image/logo/eth.png'
@@ -35,7 +36,7 @@ class Header extends Component{
     let nav = (
       <div className='header'>
         <div className="logoContainer">
-          <img src={azrielLogo} alt="brand logo" className='azrielLogo' onClick={() => this.setState({servePage: "dashboard"})}/>
+          <img src={azriel} alt="brand logo" className='azrielLogo' onClick={() => this.setState({servePage: "dashboard"})}/>
         </div>
 
         <div className="searchBar">
