@@ -55,9 +55,6 @@ ul.list-group.list-group-flush {
     font-weight: 500;
 }
 li.list-group-item {
-    padding: 1rem;
-}
-li.list-group-item {
     border-color: #40324E;
     background-color: transparent;
     transition: 0.1s;
