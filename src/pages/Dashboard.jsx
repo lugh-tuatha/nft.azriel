@@ -5,13 +5,27 @@ import Announcements from '../components/announcements'
 import Collection from '../components/collections'
 import Footer from '../components/footer'
 
+import NotableCollection from '../data/nft-list/notableCollection'
+
 import './pages.css'
+import notableCollection from '../data/nft-list/notableCollection'
 
 export default function Dashboard() {
   return (
     <div>
       <Feature />
-      <Collection />
+
+      <div className='container-fluid collectionContainer'>
+        <div className="section-header">
+          <h2 className="title">Notable Collections</h2>
+        </div>
+        <div className="row collectionCards">
+          {NotableCollection.map(nCollection => (
+            <Collection key={nCollection.key} title={nCollection.title} floorPrice={nCollection.floorPrice} volume={nCollection.volume} image={nCollection.image}/>
+          ))}
+        </div>
+      </div>
+
       {/* <h1>Notable collection</h1> */}
       <Announcements />
       <Footer />

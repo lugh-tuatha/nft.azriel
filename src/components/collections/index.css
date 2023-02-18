@@ -24,6 +24,8 @@
 }
 .card img {
     position: relative;
+    width: 25rem;
+    aspect-ratio: 5/4;
 }
 .card:before {
     content: none;

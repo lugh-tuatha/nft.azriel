@@ -1,6 +1,19 @@
 /*----------------
 Dashboard styles
 ----------------*/
+.collectionContainer{
+  width: 95%;
+}
+
+.section-header{
+  margin-top: 2rem;
+}
+
+.collectionCards{
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
 
 /*----------------
 Marketplace styles
