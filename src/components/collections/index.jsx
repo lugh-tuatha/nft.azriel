@@ -1,7 +1,5 @@
 import './index.css';
 
-import img from '../../assets/image/dummy/aae04385c14ba84b5a7d8a00fcc53e68.gif';
-
 function Collection({ image, title, floorPrice, volume }) {
   return (
     <div className="card">

@@ -9,7 +9,6 @@ function Announcements() {
         <h2 className="title">Trending announcements 📢 </h2>
         <span className="bandge">beta</span>
       </div>
-        
         <div className="card no-hover">
             <ul className="list-group list-group-flush">
                 <li className="list-group-item">
