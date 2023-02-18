@@ -113,7 +113,7 @@ const nfts = [
   },
   {
     id: 2,
-    nftName: "Aceeee",
+    nftName: "Journey",
     price: 0.0568 + " ETH",
     image: journey,
   },
