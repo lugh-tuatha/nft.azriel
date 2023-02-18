@@ -86,7 +86,6 @@ export default function memoryGame() {
         <button onClick={shuffledCards} className="newGameBtn">New Game</button>
       </div>
 
-
       <div className="card-grid">
         {cards.map(card => (
           <SingleCard key={card.id} card={card} handleChoice={handleChoice} flipped={card === choiceOne || card === choiceTwo || card.matched} disabled={disabled}/>

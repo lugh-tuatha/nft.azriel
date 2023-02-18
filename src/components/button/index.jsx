@@ -1,11 +1,9 @@
 import { useState } from 'react'
-import './index.css'
+import './button.css'
 
 function Btn({buttonName}) {
   return (
-    <div>
-      <button className="custom-btn btn-3"><span>{buttonName}</span></button>
-    </div>
+    <button className="btn-gray">{buttonName}</button>
   )
 }
 
