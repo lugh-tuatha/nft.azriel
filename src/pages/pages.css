@@ -15,6 +15,11 @@ Dashboard styles
     grid-gap: 20px;
 }
 
+.announcement-container{
+  width: 95%;
+  margin: 0 auto;
+}
+
 /*----------------
 Marketplace styles
 ----------------*/
