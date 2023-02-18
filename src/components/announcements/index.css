@@ -1,3 +1,7 @@
+.announcement-container{
+    width: 95%;
+}
+
 .container {
     margin-top: 50px;
     padding-top: 50px;
@@ -19,14 +23,6 @@ span.bandge {
 }
 .section-header h2.title {
     color: #ffffff;
-}
-.card {
-    padding: 0;
-    width: 100%;
-    height: auto;
-    background-color: #1C1326;
-    display: block;
-    border-color: #40324E;
 }
 .card:before {
     content: none;
@@ -57,9 +53,6 @@ ul.list-group.list-group-flush {
     margin: 0px;
     font-size: 14px;
     font-weight: 500;
-}
-li.list-group-item {
-    padding: 1rem;
 }
 li.list-group-item {
     border-color: #40324E;
