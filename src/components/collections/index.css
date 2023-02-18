@@ -32,6 +32,7 @@ h5.card-title {
 }
 .card .info p {
     margin: 0px;
+    line-height: 18px;
 }
 
 .card .info p.label {
@@ -39,4 +40,10 @@ h5.card-title {
     font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card .info p.value {
+    font-size: 14px;
 }
