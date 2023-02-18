@@ -99,11 +99,6 @@ import cityBlocks from "../../assets/image/nft-list/cityBlocks.avif"
 import lostParadise from "../../assets/image/nft-list/lostParadise.avif"
 import theFourSeason from "../../assets/image/nft-list/theFourSeason.avif"
 
-
-
-
-
-
 const nfts = [
   {
     id: 1,
