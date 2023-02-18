@@ -34,21 +34,21 @@ span.bandge {
 ul.list-group.list-group-flush {
     width: 100%;
 }
-.profile {
+.card .profile {
     display: flex;
     align-items: center;
     gap: 6px;
     height: 100%;
 }
 
-.profile img {
+.card .profile img {
     width: 2rem;
-    height: auto;
+    height: 2rem;
     border-radius: 100px;
     position: relative;
 }
 
-.profile p.name {
+.card .profile p.name {
     padding: 0px;
     margin: 0px;
     font-size: 14px;
