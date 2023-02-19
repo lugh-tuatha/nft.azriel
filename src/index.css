@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
 :root {
   --primary-color: #a2d2ff;
   /* light mode */
@@ -12,7 +14,7 @@
 }
 
 *{
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -35,13 +37,9 @@ body {
 }
 
 ::-webkit-scrollbar-track{
-  background-color: rebeccapurple;
+  background-color: #15263F;
 }
 
 ::-webkit-scrollbar-thumb{
-  background-color: rgba(219, 69, 219, 0.8);
-}
-
-::-webkit-scrollbar-thumb:hover{
-  background-color: #212529;
+  background-color: #a1a5b0;
 }
