@@ -7,7 +7,6 @@ import retro from "../assets/image/memory-game/retro.jpg";
 import digitalArt from "../assets/image/memory-game/digital-art.png"
 
 import SingleCard from "../components/single-card";
-import Button from "../components/button"
 
 const cardImages = [
   { "src": artInspo, matched: false},

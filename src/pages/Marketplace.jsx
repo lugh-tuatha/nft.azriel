@@ -9,6 +9,8 @@ export default function Marketplace() {
       {nfts.map(nft => (
         <Cards key={nft.id} nftName={nft.nftName} price={nft.price} image={nft.image}/>
       ))}
+
+      <button>ace</button>
     </div>
   );
 }

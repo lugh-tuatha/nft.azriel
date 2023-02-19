@@ -1,6 +1,5 @@
 import '../index.css'
 import Feature from '../components/feature'
-import TeamCards from '../components/team-cards'
 import Announcements from '../components/announcements'
 import Collection from '../components/collections'
 import Footer from '../components/footer'
@@ -36,9 +35,7 @@ export default function Dashboard() {
           ))}
         </div>
       </div>
-      {/* <h1>Notable collection</h1> */}
       <Footer />
-      {/* <h1>Teams</h1> */}
     </div>
   )
 }
