@@ -148,7 +148,6 @@
   align-items: center;
 }
 
-
 .headerItems.show {
   position: absolute;
   display: flex;
@@ -160,7 +159,6 @@
   z-index: 2;
   padding-top: 5rem;
 }
-
 
 .menu-btn{
   display: none;
