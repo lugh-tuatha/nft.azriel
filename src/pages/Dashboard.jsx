@@ -6,7 +6,7 @@ import Footer from '../components/footer'
 
 import NotableCollection from '../data/notable-collection/notableCollection'
 import announcement from '../data/announcements/announcements'
-
+import EarnBanner from '../components/earn-banner'
 import './pages.css'
 
 export default function Dashboard() {
@@ -35,6 +35,7 @@ export default function Dashboard() {
           ))}
         </div>
       </div>
+      <EarnBanner />
       <Footer />
     </div>
   )
