@@ -3,7 +3,7 @@ import Button from "../button"
 
 import ethLogo from "../../assets/image/logo/eth-logo.png"
 
-function Cards({ nftName, price, image }) {
+function Cards({ nftName, price, image, days }) {
 
   return (
     <div className="nftCardsContainer">
@@ -22,7 +22,7 @@ function Cards({ nftName, price, image }) {
           <div className="time">
             <div className="type">
               <img className="icon" src="https://assets.codepen.io/4479043/clock.png" height="30px"/>
-              <p>3 days left</p>
+              <p>{days}</p>
             </div>
           </div>
         </div>
