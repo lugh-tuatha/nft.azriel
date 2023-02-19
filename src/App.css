@@ -8,7 +8,6 @@ body{
 }
 
 .app{
-  padding: 1.25rem;
   min-height: 100vh;
   max-width: 100vw;
 }

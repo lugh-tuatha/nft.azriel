@@ -7,6 +7,7 @@ import retro from "../assets/image/memory-game/retro.jpg";
 import digitalArt from "../assets/image/memory-game/digital-art.png"
 
 import SingleCard from "../components/single-card";
+import Footer from "../components/footer";
 
 const cardImages = [
   { "src": artInspo, matched: false},
@@ -79,18 +80,21 @@ export default function memoryGame() {
   }, [])
 
   return(
-    <div className="gameZoneContainer">
-      <div className="gameZoneHeader">
-        <h1 className="text-center">Magic Match</h1>
-        <button onClick={shuffledCards} className="newGameBtn">New Game</button>
-      </div>
+    <>
+      <div className="gameZoneContainer">
+        <div className="gameZoneHeader">
+          <h1 className="text-center">Magic Match</h1>
+          <button onClick={shuffledCards} className="newGameBtn">New Game</button>
+        </div>
 
-      <div className="card-grid">
-        {cards.map(card => (
-          <SingleCard key={card.id} card={card} handleChoice={handleChoice} flipped={card === choiceOne || card === choiceTwo || card.matched} disabled={disabled}/>
-        ))}
+        <div className="card-grid">
+          {cards.map(card => (
+            <SingleCard key={card.id} card={card} handleChoice={handleChoice} flipped={card === choiceOne || card === choiceTwo || card.matched} disabled={disabled}/>
+          ))}
+        </div>
+        <p>Turns: {turns}</p>
       </div>
-      <p>Turns: {turns}</p>
-    </div>
+      <Footer />
+    </>
   )
 }
