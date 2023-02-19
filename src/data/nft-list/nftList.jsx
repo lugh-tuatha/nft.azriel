@@ -105,12 +105,14 @@ const nfts = [
     nftName: "Cyber Korg",
     price: 0.2032 + " ETH",
     image: cyberKorg,
+    days: 2 + " Days left",
   },
   {
     id: 2,
     nftName: "Journey",
     price: 0.0568 + " ETH",
     image: journey,
+    days: 13 + " Hours left",
   },
   {
     id: 3,
