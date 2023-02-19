@@ -10,19 +10,21 @@ footer.Footer {
   padding-top: 40px;
   margin-top: 40px;
 }
-.featureContainer{
+.featureContainer {
   width: 95%;
-  height: 30rem;
+  height: auto;
   border-radius: 24px;
   margin: 2rem auto;
   background: linear-gradient(to right, #2b2d42, #7209b7);
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   padding: 2rem;
 }
-.featureContainer h1 {
+.featureContainer .profile-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.featureContainer .profile-details h1 {
   margin: 0px!important;
   padding: 0px!important;
 }
@@ -30,40 +32,23 @@ footer.Footer {
   margin: 0px;
   margin-top: 25px;
 }
-.featureContainer::before {
-  background-image: url('/src/assets/image/banner/rocket.png');
-  background-size: 100%;
-  display: inline-block;
-  width: 100px;
-  height: 280px;
-  background-repeat: no-repeat;
-  content: "";
-  position: absolute;
-  right: 60%;
-  transform: scaleX(-1);
-}
+
 .featureContainer > h1{
   margin: 2rem;
   padding: 1rem 0 0 0;
   max-width: 470px;
 }
-.featureContainer:hover::before {
-  animation: bounce 2s infinite;
+.featureContainer .art {
+  text-align: center;
 }
-.featureContainer::after {
-  background-image: url('/src/assets/image/banner/astronaut.png');
-  background-size: 100%;
-  display: inline-block;
-  width: 420px;
-  height: 380px;
-  background-repeat: no-repeat;
-  content: "";
+img.rocket {
+  width: 100px;
   position: absolute;
-  right: 30%;
-  top: 10%;
+  transform: scaleX(-1);
 }
-.featureContainer:hover::after {
-  animation: bounce2 2s infinite;
+
+.featureContainer:hover img.rocket {
+  animation: bounce 2s infinite;
 }
 
 @keyframes bounce {
@@ -76,6 +61,16 @@ footer.Footer {
   100% {
     transform: scaleX(-1) translate3d(0px, 0px, 0);
   }
+}
+
+img.astronaut {
+  width: 100%;
+  max-width: 330px;
+  position: relative;
+}
+
+.featureContainer:hover img.astronaut {
+  animation: bounce2 2s infinite;
 }
 
 @keyframes bounce2 {
@@ -92,11 +87,9 @@ footer.Footer {
 
 .action-btns {
   display: flex;
-  justify-content: space-between;
-  position: relative;
-  margin-top: 20px;
+  justify-content: end;
+  width: 100%;
 }
-
 .mr-4 {
   margin-right: 10px!important;
 }
@@ -123,10 +116,7 @@ img.nftLogo {
 }
 
 p.desc {
-  position: absolute;
-  top: 160px;
-  right: 32px;
-  width: 410px;
+  width: 100%;
   border: solid #000000;
   border-radius: 8px;
   padding: 20px;
@@ -142,5 +132,11 @@ p.desc {
   }
   
   img.nftLogo{
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .action-btns {
+    
   }
 }

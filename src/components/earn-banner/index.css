@@ -1,0 +1,55 @@
+.earn-banner-component {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-top: 20px;
+
+}
+.earn-banner-component h1 {
+    font-size: 40px;
+    line-height: 51px;
+    margin-bottom: 32px;
+}
+
+.gradient-text {
+    font-family:"Abril Fatface", sans-serif;
+    background: linear-gradient(to right, crimson,pink,springgreen);
+    background-size: 200% 200%;
+    animation: rainbow 2s ease-in-out infinite;
+    background-clip: text;
+    -webkit-background-clip:text;
+    color:rgba(0,0,0,0)!important;
+    transition: color .2s ease-in-out;
+}
+@keyframes rainbow { 
+    0%{background-position:left}
+    50%{background-position:right}
+    100%{background-position:left}
+}
+.earn-banner-component p.slogan {
+    font-size: 16px;
+    font-weight: 400;
+    color: #c7c7cc!important;
+    margin-bottom: 32px;
+}
+.earn-banner-component button.btn-start {
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #121619;
+    padding: 15px 24px;
+    border-radius: 8px;
+    transition: .2s;
+}
+.earn-banner-component button.btn-start:hover {
+    opacity: .8;
+}
+.earn-banner-component img.logo {
+    width: 100%;
+    max-width: 290px;
+    margin: 0 auto;
+}
+.earn-banner-container {
+    padding-top: 90px;
+    padding-bottom: 70px;
+}
