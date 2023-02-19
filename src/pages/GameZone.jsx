@@ -83,7 +83,7 @@ export default function memoryGame() {
     <>
       <div className="gameZoneContainer">
         <div className="gameZoneHeader">
-          <h1 className="text-center">Magic Match</h1>
+          <h1 className="text-center">Matchy matchy</h1>
           <button onClick={shuffledCards} className="newGameBtn">New Game</button>
         </div>
 
