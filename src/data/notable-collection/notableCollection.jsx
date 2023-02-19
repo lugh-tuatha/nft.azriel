@@ -41,13 +41,6 @@ const notableCollection = [
     volume: 33652 + " ETH",
     image: cyberKongz,
   },
-  {
-    key: 6,
-    title: "Terraforms",
-    floorPrice: 2.9146 + " ETH",
-    volume: 16409 + " ETH",
-    image: terraForms,
-  },
 ]
 
 export default notableCollection;

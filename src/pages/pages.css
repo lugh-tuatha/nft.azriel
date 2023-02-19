@@ -11,8 +11,8 @@ Dashboard styles
 
 .collectionCards{
   display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
 }
 
 .announcement-container{
@@ -30,10 +30,9 @@ Marketplace styles
   margin: 2rem;
 }
 
-.buy-sell-btn{
-  display: flex;
-}
-
+/*----------------
+MemoryGame styles
+----------------*/
 .gameZoneContainer{
   width: 50%;
   margin: 0 auto;
@@ -42,6 +41,7 @@ Marketplace styles
 .gameZoneHeader{
   display: flex;
   flex-direction: column;
+  margin-top: 1rem;
 }
 
 .gameZoneHeader > h1{
@@ -59,7 +59,7 @@ Marketplace styles
   font-size: 1.25rem;
   transition: .5s ease all;
   align-self: center;
-  margin: 2rem 0 0 0;
+  margin: 1rem 0 0 0;
 }
 
 .gameZoneHeader .newGameBtn:hover{
@@ -67,16 +67,12 @@ Marketplace styles
   color: black;
 }
 
-/*----------------
-MemoryGame styles
-----------------*/
 .card-grid{
-  margin-top: 40px;
+  margin-top: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
 }
-
 
 /*----------------
 Responsiveness
@@ -85,11 +81,23 @@ Responsiveness
   .marketplaceContainer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
+  .gameZoneContainer{
+    width: 60%;
+  }
 }
 
 @media screen and (max-width: 980px) {
   .marketplaceContainer {
     grid-template-columns: 1fr 1fr 1fr ;
+  }
+
+  .collectionCards{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .gameZoneContainer {
+    width: 65%;
   }
 }
 
@@ -97,10 +105,35 @@ Responsiveness
   .marketplaceContainer {
     grid-template-columns: 1fr 1fr ;
   }
+
+  .gameZoneContainer {
+    width: 75%;
+  }
 }
 
 @media screen and (max-width: 550px) {
   .marketplaceContainer {
     grid-template-columns: 1fr;
+  }
+  .collectionCards {
+    grid-template-columns: 1fr 1fr ;
+  }
+
+  .gameZoneContainer {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .collectionCards {
+    grid-template-columns: 1fr;
+  }
+
+  .gameZoneContainer {
+    width: 100%;
+  }
+
+  .card-grid{
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
