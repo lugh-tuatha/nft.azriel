@@ -35,12 +35,12 @@ h1 {
   color: #00FFF8;
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 20px;
 }
 
 .type .icon {
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 p {
@@ -66,6 +66,17 @@ p {
   color: #8BACD9;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 20px;
+}
+
+.cardBody h1 {
+  white-space: nowrap;
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.thumbnail img.img-fluid {
+  object-fit: cover;
 }
