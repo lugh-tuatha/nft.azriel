@@ -1,5 +1,4 @@
 import './cards.css'
-import Button from "../button"
 
 import ethLogo from "../../assets/image/logo/eth-logo.png"
 

@@ -2,6 +2,8 @@ import './feature.css'
 import inspace from '../../assets/image/banner/NFTInSpace.png';
 import astronaut from '/src/assets/image/banner/astronaut.png';
 import rocket from '/src/assets/image/banner/rocket.png';
+import Button from '../button';
+
 function Feature() {
   return (
     <div className='featureContainer'>
