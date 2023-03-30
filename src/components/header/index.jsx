@@ -25,9 +25,9 @@ function Header(){
         </div>
 
         <div className='d-flex gap-4 mx-4'>
-          <Link to="/nft.azriel/dashboard"><p className='my-auto'>Dashboard</p></Link>
-          <Link to="/nft.azriel/marketplace"><p className='my-auto'>Marketplace</p></Link>
-          <Link to="/nft.azriel/gamezone"><p className='my-auto'>Game zone</p></Link>
+          <Link to="/dashboard"><p className='my-auto'>Dashboard</p></Link>
+          <Link to="/marketplace"><p className='my-auto'>Marketplace</p></Link>
+          <Link to="/gamezone"><p className='my-auto'>Game zone</p></Link>
         </div>
 
         <div className="balanceContainer ">

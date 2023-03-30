@@ -14,15 +14,15 @@ import {
 
 const router = createBrowserRouter([
   {
-    path: "/nft.azriel/dashboard",
+    path: "/dashboard",
     element: <Dashboard />,
   },
   {
-    path: "/nft.azriel/marketplace",
+    path: "/marketplace",
     element: <Marketplace />,
   },
   {
-    path: "/nft.azriel/gamezone",
+    path: "/gamezone",
     element: <GameZone />,
   },
 ]);
