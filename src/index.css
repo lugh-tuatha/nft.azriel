@@ -29,7 +29,7 @@ a:hover {
 
 body {
   margin: 0;
-  background-color: var(--light-color);
+  background-color: var(--bg-dark-color);
 }
 
 ::-webkit-scrollbar{

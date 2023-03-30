@@ -8,6 +8,7 @@ import digitalArt from "../assets/image/memory-game/digital-art.png"
 
 import SingleCard from "../components/single-card";
 import Footer from "../components/footer";
+import Header from "../components/header";
 
 const cardImages = [
   { "src": artInspo, matched: false},
@@ -81,6 +82,7 @@ export default function memoryGame() {
 
   return(
     <>
+      <Header />
       <div className="gameZoneContainer">
         <div className="gameZoneHeader">
           <h1 className="text-center">Matchy matchy</h1>

@@ -7,11 +7,14 @@ import Footer from '../components/footer'
 import NotableCollection from '../data/notable-collection/notableCollection'
 import announcement from '../data/announcements/announcements'
 import EarnBanner from '../components/earn-banner'
+import Header from '../components/header'
+
 import './pages.css'
 
 export default function Dashboard() {
   return (
     <div>
+      <Header />
       <Feature />
 
       <div className="cotainer-fluid announcement-container">
