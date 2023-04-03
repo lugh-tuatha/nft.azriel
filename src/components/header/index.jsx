@@ -25,7 +25,7 @@ function Header(){
         </div>
 
         <div className='d-flex gap-4 mx-4'>
-          <Link to="/dashboard"><p className='my-auto'>Dashboard</p></Link>
+          <Link to="/"><p className='my-auto'>Dashboard</p></Link>
           <Link to="/marketplace"><p className='my-auto'>Marketplace</p></Link>
           <Link to="/gamezone"><p className='my-auto'>Game zone</p></Link>
         </div>
