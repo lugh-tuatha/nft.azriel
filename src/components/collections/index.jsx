@@ -1,24 +1,68 @@
-import './index.css';
+import { useState, useEffect } from 'react';
 
-function Collection({ image, title, floorPrice, volume }) {
+function Collection() {
+  const [collections, setCollections] = useState([]);
+
+  useEffect(() => {
+    const apiKey = 'e0e94693b5b84b9d8464d6e38f69c07c';
+
+    fetch('https://graphql.icy.tools/graphql', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${apiKey}`
+      },
+      body: JSON.stringify({
+        query: `
+          query TrendingCollections {
+            trendingCollections(orderBy: SALES, orderDirection: DESC) {
+              edges {
+                node {
+                  address
+                  ... on ERC721Contract {
+                    name
+                    stats {
+                      totalSales
+                      average
+                      floor
+                      volume
+                    }
+                    symbol
+                    circulatingSupply
+                    unsafeOpenseaImageUrl
+                  }
+                }
+              }
+            }
+          }
+        `
+      })
+    })
+    .then(response => response.json())
+    .then(data => {
+      setCollections(data.data.trendingCollections.edges);
+    })
+    .catch(error => {
+      console.error(error);
+    });
+  }, []);
+
   return (
-    <div className="card">
-      <img src={image} className="card-img-top img-fluid" alt="..." />
-      <div className="card-body">
-        <h5 className="card-title">{title}</h5>
-        <div className="row info">
-          <div className="col">
-            <p className="label">floor</p>
-            <p className="value">{floorPrice}</p>
-          </div>
-          <div className="col">
-            <p className="label">Total volume</p>
-            <p className="value">{volume}</p>
-          </div>
+    <div>
+      {collections.map(collection => (
+        <div key={collection.node.address}>
+          <h2>{collection.node.name}</h2>
+          <img src={collection.node.unsafeOpenseaImageUrl} alt={collection.node.name} />
+          <p>Circulating Supply: {collection.node.circulatingSupply}</p>
+          <p>Symbol: {collection.node.symbol}</p>
+          <p>Total Sales: {collection.node.stats.totalSales}</p>
+          <p>Average: {collection.node.stats.average}</p>
+          <p>Floor: {collection.node.stats.floor}</p>
+          <p>Volume: {collection.node.stats.volume}</p>
         </div>
-      </div>
+      ))}
     </div>
-  )
+  );
 }
 
 export default Collection;

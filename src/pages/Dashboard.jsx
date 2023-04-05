@@ -33,9 +33,7 @@ export default function Dashboard() {
           <h2 className="title">Notable Collections</h2>
         </div>
         <div className="row collectionCards">
-          {NotableCollection.map(nCollection => (
-            <Collection key={nCollection.key} title={nCollection.title} floorPrice={nCollection.floorPrice} volume={nCollection.volume} image={nCollection.image}/>
-          ))}
+          <Collection />
         </div>
       </div>
       <EarnBanner />
