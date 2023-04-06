@@ -1,10 +1,9 @@
 import '../index.css'
 import Feature from '../components/feature'
 import Announcements from '../components/announcements'
-import Collection from '../components/collections'
+import Collection from '../components/trending-collections'
 import Footer from '../components/footer'
 
-import NotableCollection from '../data/notable-collection/notableCollection'
 import announcement from '../data/announcements/announcements'
 import EarnBanner from '../components/earn-banner'
 import Header from '../components/header'
@@ -32,7 +31,7 @@ export default function Dashboard() {
         <div className="section-header">
           <h2 className="title">Notable Collections</h2>
         </div>
-        <div className="row collectionCards">
+        <div className="row ">
           <Collection />
         </div>
       </div>

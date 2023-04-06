@@ -9,11 +9,7 @@ Dashboard styles
   margin-top: 2rem;
 }
 
-.collectionCards{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
-}
+
 
 .announcement-container{
   width: 95%;
@@ -115,9 +111,6 @@ Responsiveness
   .marketplaceContainer {
     grid-template-columns: 1fr;
   }
-  .collectionCards {
-    grid-template-columns: 1fr 1fr ;
-  }
 
   .gameZoneContainer {
     width: 90%;
@@ -125,10 +118,6 @@ Responsiveness
 }
 
 @media screen and (max-width: 400px) {
-  .collectionCards {
-    grid-template-columns: 1fr;
-  }
-
   .gameZoneContainer {
     width: 100%;
   }
