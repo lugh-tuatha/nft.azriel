@@ -1,4 +1,7 @@
 import { useState, useEffect } from 'react';
+import './index.css'
+
+import * as Fa from "react-icons/fa";
 
 function Collection() {
   const [collections, setCollections] = useState([]);
@@ -27,7 +30,6 @@ function Collection() {
                       floor
                       volume
                     }
-                    symbol
                     circulatingSupply
                     unsafeOpenseaImageUrl
                   }
@@ -49,18 +51,52 @@ function Collection() {
 
   return (
     <div>
-      {collections.map(collection => (
-        <div key={collection.node.address}>
-          <h2>{collection.node.name}</h2>
-          <img src={collection.node.unsafeOpenseaImageUrl} alt={collection.node.name} />
-          <p>Circulating Supply: {collection.node.circulatingSupply}</p>
-          <p>Symbol: {collection.node.symbol}</p>
-          <p>Total Sales: {collection.node.stats.totalSales}</p>
-          <p>Average: {collection.node.stats.average}</p>
-          <p>Floor: {collection.node.stats.floor}</p>
-          <p>Volume: {collection.node.stats.volume}</p>
+      <div className="trending-collection">
+        <div className="row trending-collection-title px-2 py-3">
+          <div className="col-lg-4">
+            <p>COLLECTION</p>
+          </div>
+          <div className="col-lg-2">
+            <p>SALES FLOOR</p>
+          </div>
+          <div className="col-lg-1">
+            <p>SALES</p>
+          </div>
+          <div className="col-lg-3">
+            <p>AVERAGE</p>
+          </div>
+          <div className="col-lg-2">
+            <p>VOLUME</p>
+          </div>
         </div>
-      ))}
+        {collections.map(collection => (
+          <div key={collection.node.address}>
+            <div className="row trending-collection-body p-2">
+              <div className="col-lg-4">
+                <div className='d-flex gap-2'>
+                  <img src={collection.node.unsafeOpenseaImageUrl} alt={collection.node.name}/>
+                  <div>
+                    <p className='fw-semibold col-name'>{collection.node.name}</p>
+                    <p className='supply'>Circulating Supply: {collection.node.circulatingSupply}</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-2 my-auto">
+                <p><Fa.FaEthereum /> {collection.node.stats.floor}</p>
+              </div>
+              <div className="col-lg-1 my-auto">
+                <p>{collection.node.stats.totalSales}</p>
+              </div>
+              <div className="col-lg-3 my-auto">
+                <p><Fa.FaEthereum /> {collection.node.stats.average}</p>
+              </div>
+              <div className="col-lg-2 my-auto">
+                <p><Fa.FaEthereum /> {collection.node.stats.volume}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

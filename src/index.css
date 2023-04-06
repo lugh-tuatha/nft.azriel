@@ -2,6 +2,8 @@
 
 :root {
   --primary-color: #a2d2ff;
+  --collection-color: #171819;
+  --collection-color-hover: #222324;
   /* light mode */
   --bg-light-color: #f5f6f8;
   --bg-light-color-2: #fff;

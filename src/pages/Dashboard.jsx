@@ -29,7 +29,7 @@ export default function Dashboard() {
 
       <div className='container-fluid collectionContainer'>
         <div className="section-header">
-          <h2 className="title">Notable Collections</h2>
+          <h2 className="title">Trending Collections</h2>
         </div>
         <div className="row ">
           <Collection />
