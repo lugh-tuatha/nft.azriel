@@ -82,16 +82,16 @@ function Collection() {
                 </div>
               </div>
               <div className="col-lg-2 my-auto">
-                <p><Fa.FaEthereum /> {collection.node.stats.floor}</p>
+                <p className='fw-semibold'><Fa.FaEthereum className='eth-icon' size={20}/> {collection.node.stats.floor}</p>
               </div>
               <div className="col-lg-1 my-auto">
                 <p>{collection.node.stats.totalSales}</p>
               </div>
               <div className="col-lg-3 my-auto">
-                <p><Fa.FaEthereum /> {collection.node.stats.average}</p>
+                <p className='fw-semibold'><Fa.FaEthereum className='eth-icon' size={20}/> {collection.node.stats.average}</p>
               </div>
               <div className="col-lg-2 my-auto">
-                <p><Fa.FaEthereum /> {collection.node.stats.volume}</p>
+                <p className='fw-semibold'><Fa.FaEthereum className='eth-icon' size={20}/> {collection.node.stats.volume}</p>
               </div>
             </div>
           </div>

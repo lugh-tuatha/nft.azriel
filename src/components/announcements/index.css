@@ -83,14 +83,9 @@ li.list-group-item:hover {
 }
 
 .more-details a.social {
-    background-color: #24182F;
+    background-color: var(--collection-title);
     padding: 5px 8px;
     color: #ffffff;
-    border: solid 1px #2b1e38;
     font-size: 12px;
     border-radius: 3px;
-}
-.more-details a.social:hover {
-    background-color: #40324E;
-    border-color: #40324E;
 }
