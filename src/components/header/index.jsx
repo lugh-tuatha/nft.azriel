@@ -1,8 +1,12 @@
 import React from 'react';
 
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+
 import azriel from '../../assets/image/logo/azreil.png';
-import searchIcon from '../../assets/image/logo/search.png'
-import eth from '../../assets/image/logo/eth.png'
+
+import * as Bs from "react-icons/bs";
 
 import './header.css'
 
@@ -11,37 +15,24 @@ import { Link } from 'react-router-dom';
 function Header(){
 
   return (
-    <div>
-      <div className='header'>
-        <div className="logoContainer">
-          <img src={azriel} alt="brand logo" className='azrielLogo' onClick={() => this.setState({servePage: "dashboard"})}/>
-        </div>
+    <Navbar expand="lg" className='header'>
+      <Container fluid className='header-item'>
+        <Navbar.Brand><Link to="/"><img src={azriel} alt="" /></Link></Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto header-links text-light">
+            <Nav.Link><Link to="/">Dashboard</Link></Nav.Link>
+            <Nav.Link><Link to="/marketplace">Marketplace</Link></Nav.Link>
+            <Nav.Link><Link to="/">FAQs</Link></Nav.Link>
+            <Nav.Link><Link to="/gamezone">Gamezone</Link></Nav.Link>
+          </Nav>
 
-        <div className="searchBar">
-          <div className="searchIconContainer">
-            <img src={searchIcon} alt="magnifying icon for search bar" />
-          </div>
-          <input className='searchInput' placeholder='Collection, item....'/>
-        </div>
-
-        <div className='d-flex gap-4 mx-4'>
-          <Link to="/"><p className='my-auto'>Dashboard</p></Link>
-          <Link to="/marketplace"><p className='my-auto'>Marketplace</p></Link>
-          <Link to="/gamezone"><p className='my-auto'>Game zone</p></Link>
-        </div>
-
-        <div className="balanceContainer ">
-          <img src={eth} alt="eth logo" />
-          <p>0.515 ETH</p>
-        </div>
-
-        {/* <div>
-          <div className="menu-btn__burger">
-            
-          </div>
-        </div> */}
-      </div>
-    </div>
+          <Nav className='header-links'>
+            <Nav.Link href='https://github.com/lugh-tuatha/nft.azriel' target='_blank'><Bs.BsGithub size={32}/></Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 

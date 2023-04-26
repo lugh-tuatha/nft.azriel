@@ -1,0 +1,48 @@
+
+.trending-collection-body {
+  background-color: var(--collection-color);
+  border-bottom: #292a2b 1px solid;
+}
+
+.trending-collection-body img{
+  width: 100%;
+}
+
+.trending-collection-body p{
+  font-size: 1rem;
+  margin: 0;
+}
+
+.trending-collection-body p.supply{
+  font-size: .75rem;
+}
+
+.trending-collection-body .title{
+  font-size: 1.25rem;
+  height: 3.25rem;
+}
+
+.trending-collection-body button{
+  width: 45%;
+  margin: .5rem 0;
+  padding: .3rem 0;
+  border-radius: .5rem;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.bid-btn{
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  color: white;
+}
+
+.buy-btn {
+  background-color: var(--primary-color);
+  border: none;
+  color: black;
+}
+
+.eth-icon{
+  color: #86888a;
+}

@@ -3,13 +3,12 @@ Dashboard styles
 ----------------*/
 .collectionContainer{
   width: 95%;
+  margin: 0 auto;
 }
 
 .section-header{
   margin-top: 2rem;
 }
-
-
 
 .announcement-container{
   width: 95%;
@@ -19,11 +18,9 @@ Dashboard styles
 /*----------------
 Marketplace styles
 ----------------*/
-.marketplaceContainer{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
-  margin: 2rem;
+.marketplace-container{
+  width: 95%;
+  margin: 0 auto;
 }
 
 /*----------------

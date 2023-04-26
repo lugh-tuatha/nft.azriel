@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
-import './index.css'
+import './trending.css'
 
 import * as Fa from "react-icons/fa";
+import Button from '../button'
 
 function Collection() {
   const [collections, setCollections] = useState([]);
@@ -25,12 +26,9 @@ function Collection() {
                   ... on ERC721Contract {
                     name
                     stats {
-                      totalSales
-                      average
                       floor
                       volume
                     }
-                    circulatingSupply
                     unsafeOpenseaImageUrl
                   }
                 }
@@ -50,49 +48,29 @@ function Collection() {
   }, []);
 
   return (
-    <div>
-      <div className="trending-collection">
-        <div className="row trending-collection-title px-2 py-3">
-          <div className="col-lg-4">
-            <p>COLLECTION</p>
-          </div>
-          <div className="col-lg-2">
-            <p>SALES FLOOR</p>
-          </div>
-          <div className="col-lg-1">
-            <p>SALES</p>
-          </div>
-          <div className="col-lg-3">
-            <p>AVERAGE</p>
-          </div>
-          <div className="col-lg-2">
-            <p>VOLUME</p>
-          </div>
-        </div>
-        {collections.map(collection => (
-          <div key={collection.node.address}>
-            <div className="row trending-collection-body p-2">
-              <div className="col-lg-4">
-                <div className='d-flex gap-2'>
-                  <img src={collection.node.unsafeOpenseaImageUrl} alt={collection.node.name}/>
-                  <div>
-                    <p className='fw-semibold col-name'>{collection.node.name}</p>
-                    <p className='supply'>Circulating Supply: {collection.node.circulatingSupply}</p>
-                  </div>
+    <div className="">
+      <div className="row">
+        {collections.slice(0, 6).map(collection => (
+          <div className="col-12 col-sm-6 col-md-4 col-lg-2 mb-4 mb-lg-0">
+            <div className="trending-collection-body p-2 rounded">
+              <img src={collection.node.unsafeOpenseaImageUrl} alt={collection.node.name} className='rounded'/>
+              <p className='fw-semibold my-2 title'>{collection.node.name}</p>
+              <div className="d-flex justify-content-between ">
+                <div className='d-flex align-items-center'>
+                  <Fa.FaEthereum className='eth-icon' size={22}/> 
+                  <p className='mt-1'>{collection.node.stats.floor}</p>
+                </div>
+                <div className='d-flex align-items-center'>
+                  <Fa.FaEthereum className='eth-icon' size={22}/> 
+                  <p className='mt-1'>{collection.node.stats.volume}</p>
                 </div>
               </div>
-              <div className="col-lg-2 my-auto">
-                <p className='fw-semibold'><Fa.FaEthereum className='eth-icon' size={20}/> {collection.node.stats.floor}</p>
+
+              <div className='d-flex justify-content-between'>
+                <button className='bid-btn'>Place Bid</button>
+                <button className='buy-btn'>Buy</button>
               </div>
-              <div className="col-lg-1 my-auto">
-                <p>{collection.node.stats.totalSales}</p>
-              </div>
-              <div className="col-lg-3 my-auto">
-                <p className='fw-semibold'><Fa.FaEthereum className='eth-icon' size={20}/> {collection.node.stats.average}</p>
-              </div>
-              <div className="col-lg-2 my-auto">
-                <p className='fw-semibold'><Fa.FaEthereum className='eth-icon' size={20}/> {collection.node.stats.volume}</p>
-              </div>
+
             </div>
           </div>
         ))}

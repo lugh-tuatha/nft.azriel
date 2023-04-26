@@ -16,7 +16,7 @@ export default function Dashboard() {
       <Header />
       <Feature />
 
-      <div className="cotainer-fluid announcement-container">
+      <div className="announcement-container">
         <div className="section-header">
           <h2 className="title">Trending announcements 📢 </h2>
           <span className="bandge">beta</span>
@@ -27,7 +27,7 @@ export default function Dashboard() {
       </div>
 
 
-      <div className='container-fluid collectionContainer'>
+      <div className='collectionContainer'>
         <div className="section-header">
           <h2 className="title">Trending Collections</h2>
         </div>
@@ -35,6 +35,7 @@ export default function Dashboard() {
           <Collection />
         </div>
       </div>
+      
       <EarnBanner />
       <Footer />
     </div>

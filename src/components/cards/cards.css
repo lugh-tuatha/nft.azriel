@@ -6,15 +6,21 @@
   max-width: auto;
   max-height: 640px;
   padding: 10px;
+  border: 1px solid #0e3063;
 }
 
 .thumbnail img {
   border-radius: 8px;
   aspect-ratio: 1/1;
+  width: 100%;
 }
 
 .cardBody{
   margin-top: .5rem;
+}
+
+.cardBody p{
+  height: 3.25rem;
 }
 
 h1 {
@@ -32,10 +38,6 @@ h1 {
 }
 
 .type p {
-  color: #00FFF8;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 13px;
   line-height: 20px;
 }
 
@@ -62,12 +64,13 @@ p {
   margin: auto 0;
 }
 
-.time p {
-  color: #8BACD9;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 20px;
+.type p.vol {
+  opacity: 0.6;
+  font-size: .9rem;
+}
+
+.type p.price {
+  font-size: 1rem;
 }
 
 .cardBody h1 {
