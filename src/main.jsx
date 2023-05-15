@@ -6,6 +6,7 @@ import './index.css'
 import Dashboard from './pages/Dashboard'
 import Marketplace from './pages/Marketplace'
 import GameZone from './pages/GameZone'
+import Faqs from './pages/Faqs'
 
 import {
   createBrowserRouter,
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "/gamezone",
     element: <GameZone />,
+  },
+  {
+    path: "/FAQ's",
+    element: <Faqs />,
   },
 ]);
 

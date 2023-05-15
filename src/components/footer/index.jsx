@@ -17,7 +17,9 @@ return (
             <ul className="footer-links">
               <li><a href="#">Dashboard</a></li>
               <li><a href="#">Marketplace</a></li>
+              <li><a href="#">FAQ's</a></li>
               <li><a href="#">Game zone</a></li>
+
             </ul>
           </div>
 

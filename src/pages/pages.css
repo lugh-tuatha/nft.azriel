@@ -67,6 +67,11 @@ MemoryGame styles
   grid-gap: 20px;
 }
 
+.faq-container{
+  width: 95%;
+  margin: 0 auto;
+}
+
 /*----------------
 Responsiveness
 ----------------*/
@@ -91,6 +96,12 @@ Responsiveness
 
   .gameZoneContainer {
     width: 65%;
+  }
+}
+
+@media screen and (min-width: 745px) {
+  .faq-footer{
+    position: fixed;
   }
 }
 
