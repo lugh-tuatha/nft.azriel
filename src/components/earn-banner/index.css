@@ -43,12 +43,14 @@
 .earn-banner-component button.btn-start:hover {
     opacity: .8;
 }
-.earn-banner-component img.logo {
-    width: 100%;
-    max-width: 290px;
-    margin: 0 auto;
-}
+
+
 .earn-banner-container {
     padding-top: 90px;
     padding-bottom: 70px;
+}
+
+.earn-hero{
+    width: 25rem;
+    max-width: 95%;
 }

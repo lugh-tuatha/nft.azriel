@@ -23,7 +23,7 @@ function Header(){
           <Nav className="me-auto header-links text-light">
             <Nav.Link><Link to="/">Dashboard</Link></Nav.Link>
             <Nav.Link><Link to="/marketplace">Marketplace</Link></Nav.Link>
-            <Nav.Link><Link to="/FAQ's">FAQs</Link></Nav.Link>
+            {/* <Nav.Link><Link to="/FAQ's">FAQs</Link></Nav.Link> */}
             <Nav.Link><Link to="/gamezone">Gamezone</Link></Nav.Link>
           </Nav>
 

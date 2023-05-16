@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import './index.css';
+import Lottie from "lottie-react"
+import AnimationData from "../../assets/lottie/109445-nft-futuristic-animation.json"
 import logo from '../../assets/image/logo/aZRIEL-Silver.png'
 function EarnBanner() {
   return (
     <div className="earn-banner-component">
-      <div className="earn-banner-container">
+      <div className="earn-banner-container ">
         <div className="row">
           <div className="col-12 col-sm-6"> 
             <h1 className="heading">Earn up to <span className="gradient-text">24.51% APY</span> <br/>with AZRIEL</h1>
@@ -12,7 +14,7 @@ function EarnBanner() {
             <button className='btn-start'>Start Earning</button>
           </div>
           <div className="col-12 col-sm-6 text-end text-center">
-            <img className='logo' src={logo} />
+            <Lottie animationData={AnimationData} className='earn-hero mx-auto'/>
           </div>
         </div>
       </div>
