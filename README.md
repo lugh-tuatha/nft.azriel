@@ -6,15 +6,9 @@ A virtual NFT marketplace that allows users to play games and win unique NFTs. T
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### Prerequisites
-
-Install vite >= 4.1, node.js >= 13.12
-
 ```shell
-$ npm install vite
+$ npm install
 ```
-
-### Getting started
 
 Run the development server:
 ```shell
@@ -29,4 +23,5 @@ Open [http://localhost:5173](http://localhost:5173) with your browser to see the
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)<br>
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)<br>
 
-
+## Acknowledgement
+- [lottie](https://lottiefiles.com/)
