@@ -1,0 +1,18 @@
+p {
+  margin: 0;
+}
+
+.ReactCollapse--collapse {
+  transition: height 300ms;
+}
+
+.faqs-container{
+  background-color: var(--collection-title);
+  padding: .75rem;
+  cursor: pointer;
+}
+
+p.answer{
+  font-size: .90rem;
+  color: gray;
+}

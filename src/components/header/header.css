@@ -1,16 +1,20 @@
-.header{
+.header {
   box-shadow: 3px 3px 3px, 3px 2px 3px var(--collection-title);
 }
 
-.header .header-item{
+.header .header-item {
   width: 95%;
 }
 
-.header .header-item img{
+.header .header-item img {
   width: 3rem;
 }
 
-.header .header-links a{
+.header .header-links a {
   font-size: 1.25rem;
   color: white;
+}
+
+.nav-icon {
+  background-color: var(--primary-color);
 }

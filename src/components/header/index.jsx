@@ -18,12 +18,12 @@ function Header(){
     <Navbar expand="lg" className='header'>
       <Container fluid className='header-item'>
         <Navbar.Brand><Link to="/"><img src={azriel} alt="" /></Link></Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className='nav-icon'/>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto header-links text-light">
             <Nav.Link><Link to="/">Dashboard</Link></Nav.Link>
             <Nav.Link><Link to="/marketplace">Marketplace</Link></Nav.Link>
-            {/* <Nav.Link><Link to="/FAQ's">FAQs</Link></Nav.Link> */}
+            <Nav.Link><Link to="/FAQ's">FAQs</Link></Nav.Link>
             <Nav.Link><Link to="/gamezone">Gamezone</Link></Nav.Link>
           </Nav>
 
